@@ -2,7 +2,7 @@
 
 关键词: 短视频APP,开源短视频APP,仿抖音,仿快手APP,ShortVideo Android Client
 
-这个是一款短视频APP产品,代码开源,仅供学习,禁止商用!
+这个是一款短视频APP产品,代码开源,仅供学习,`禁止商用`!
 
 ### 关联仓库
  - [短视频APP Web后端] (https://github.com/wanyiinc/ShortVideo_Backed)
@@ -25,7 +25,7 @@
 | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
 
 ### 问题反馈
- - 请提交 issues
+ - 如果有功能或者BUG请提交 issues
 
 
 

@@ -11,7 +11,7 @@ public class UriConst {
     /**
      * 请求app域名端口
      */
-    public static final String URI_APPLOADER = "http://apploader.xiong.eu";
+    public static final String URI_APPLOADER = "http://apploader.afuny.com";
 
     /**
      * 默认得域名端口
@@ -35,7 +35,7 @@ public class UriConst {
     /**
      * 余额充值
      */
-    public static final String HTML_CHARGE = "http://hdvideo.afuny.com/payment/index/charge?";
+    public static final String HTML_CHARGE = "http://apiv1.afuny.com/payment/index/charge?";
     /**
      * 开通续费
      */
