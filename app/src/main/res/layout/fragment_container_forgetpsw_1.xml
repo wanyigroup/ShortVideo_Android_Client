@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/Container.Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/input_edit"
+            android:id="@+id/input_email"
+            android:hint="请输入邮箱账号"
+            app:met_floatingLabelText="邮箱"
+            app:met_clearButton="true"
+            >
+
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/input_edit"
+            android:id="@+id/input_verify"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:visibility="gone"
+            app:met_floatingLabelText="验证码"
+            app:met_passWordButton="true"
+            >
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+        <com.xuexiang.xui.widget.button.CountDownButton
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/TextStyle.Explain.Login"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:text="找回密码"
+            android:id="@+id/verify_email"
+            >
+        </com.xuexiang.xui.widget.button.CountDownButton>
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_30"
+            style="@style/CardButton.Large"
+            android:text="确定"
+            android:id="@+id/step_next"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+    </LinearLayout>
+</LinearLayout>

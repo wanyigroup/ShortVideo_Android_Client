@@ -1,0 +1,15 @@
+project.ext {
+    releaseVersion = '3.2.1'
+    releaseVersionCode = 42
+
+    minSdkVersion = 16
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = '28.0.3'
+
+    // App dependencies
+    ijkPlayerVersion = '0.8.8'
+    exoPlayerVersion = '2.10.8'
+
+    annotation = 'androidx.annotation:annotation:1.1.0'
+}

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/Container"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/container_item_height">
+                <com.xuexiang.xui.widget.imageview.IconImageView
+                    style="@style/user_photo"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@mipmap/placeholder_photo"
+                    android:id="@+id/user_photo"
+                    >
+                </com.xuexiang.xui.widget.imageview.IconImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    app:layout_constraintLeft_toRightOf="@id/user_photo"
+                    app:layout_constraintTop_toTopOf="@id/user_photo"
+                    app:layout_constraintBottom_toBottomOf="@id/user_photo"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="郭敬明"
+                        android:id="@+id/user_name"
+                        android:textColor="?attr/xui_config_color_title_text"
+                        android:textSize="?attr/xui_config_size_title_text"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:text="LV1"
+                        android:id="@+id/user_level"
+                        android:textColor="?attr/remind_color"
+                        android:textSize="?attr/xui_config_size_content_text"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <com.dueeeke.videocontroller.MarqueeTextView
+                    app:mtv_isAutoDisplay="true"
+                    app:mtv_isAutoFit="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="?attr/xui_config_size_content_text"
+                    android:textColor="?attr/xui_config_color_content_text"
+                    android:text="VIP会员可获得更多优质用户体验，点击立刻升级"
+                    >
+            </com.dueeeke.videocontroller.MarqueeTextView>
+
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/Container.Card"
+
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                   style="@style/CardRoot"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:src="@mipmap/ic_question"
+                        android:id="@+id/ic_question"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        >
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="?attr/xui_config_size_explain_text"
+                        android:textColor="@color/xui_config_color_white"
+                        android:text="鱼币余额"
+                        android:id="@+id/vip_title"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        >
+                    </TextView>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/xui_btn_view_height"
+                        android:orientation="horizontal"
+                        android:id="@+id/vip_contain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        >
+                        <com.xuexiang.xui.widget.button.ButtonView
+                            style="@style/CardButton"
+                            android:text="充值"
+                            android:id="@+id/vip_recharge"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+                        </com.xuexiang.xui.widget.button.ButtonView>
+                        <com.xuexiang.xui.widget.button.ButtonView
+                            style="@style/CardButton"
+                            android:text="升级VIP"
+                            android:id="@+id/vip_upgrade"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+                        </com.xuexiang.xui.widget.button.ButtonView>
+                         <com.xuexiang.xui.widget.button.ButtonView
+                             style="@style/CardButton"
+                             android:text="卡券兑换"
+                             android:id="@+id/vip_coupon_exchange"
+                             app:layout_constraintLeft_toLeftOf="@id/vip_recharge"
+                             app:layout_constraintRight_toRightOf="@id/vip_upgrade"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             >
+
+
+                         </com.xuexiang.xui.widget.button.ButtonView>
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/vip_title"
+                        app:layout_constraintBottom_toTopOf="@id/vip_contain"
+                        app:layout_constraintLeft_toLeftOf="@id/vip_title"
+                        >
+                        <TextView
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="?attr/card_large_txt"
+                            android:textColor="#ffffff"
+                            android:id="@+id/user_balance"
+                            >
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:textSize="?attr/xui_config_size_explain_text"
+                            android:textColor="#ffffff"
+                            android:text="鱼币可进行APP内兑换消费"
+                            app:layout_constraintLeft_toLeftOf="@id/user_balance"
+                            app:layout_constraintTop_toBottomOf="@id/user_balance"
+                            >
+
+                        </TextView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_height="?attr/container_item_height">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_0"
+                    android:id="@+id/center_line"
+                    app:layout_constraintWidth_percent="0.33"
+                    app:layout_constraintWidth_default="percent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+                </View>
+
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/rv_animation"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/center_line"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/vip_task"
+                        >
+
+                        <ImageView style="@style/fragment_only_vip_image"
+                            android:src="@mipmap/vip_task"
+                            >
+                        </ImageView>
+                        <TextView
+                            android:text="任务中心"
+                            style="@style/fragment_only_vip_txt">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                </com.xuexiang.xui.widget.button.RippleView>
+
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/rv_animation"
+                    app:layout_constraintLeft_toLeftOf="@id/center_line"
+                    app:layout_constraintRight_toRightOf="@id/center_line"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/vip_member"
+                        >
+                        <ImageView style="@style/fragment_only_vip_image"
+                            android:src="@mipmap/vip_member"
+                            >
+                        </ImageView>
+                        <TextView
+                            android:text="VIP大礼包"
+                            style="@style/fragment_only_vip_txt">
+
+                        </TextView>
+                    </LinearLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/rv_animation"
+                    app:layout_constraintLeft_toRightOf="@id/center_line"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/vip_rank">
+                        <ImageView style="@style/fragment_only_vip_image"
+                            android:src="@mipmap/vip_rank"
+                            >
+                        </ImageView>
+                        <TextView
+                            android:text="排行榜"
+                            style="@style/fragment_only_vip_txt">
+
+                        </TextView>
+                    </LinearLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp_20"
+                >
+                <TextView
+                    android:text="微信扫码添加小管家"
+                    style="@style/fragment_only_vip_bottom_txt">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="回复关键词【小鱼VIP】立刻进群"
+                    style="@style/fragment_only_vip_bottom_txt">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/zxing_placeholder"
+                android:src="@mipmap/placeholder_qrcode"
+                >
+            </ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

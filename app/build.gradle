@@ -1,0 +1,213 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'com.xuexiang.xrouter' //引用xrouter-plugin插件实现自动注册
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.0'
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName: project.getName()]
+            }
+        }
+        applicationId "com.wanyi.uiframe"
+        multiDexEnabled true
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    greendao {
+        schemaVersion 7 //数据库版本号
+        daoPackage 'com.wanyi.uiframe.persistence'// 设置DaoMaster、DaoSession、Dao 包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    }
+}
+
+ext {
+    m3u8Version = 'v2.3.0'
+    loadDialogVersion = 'v1.1.2'
+    greenDaoHelperVersion = 'v2.2.1'
+    lib = [
+            "m3u8Manager":"com.jwkj:M3U8Manger:${m3u8Version}",
+            "loadDialog":"com.github.ForgetAll:LoadingDialog:${loadDialogVersion}",
+            "greenDaoHelper":"com.github.yuweiguocn:GreenDaoUpgradeHelper:${greenDaoHelperVersion}"
+    ]
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //数据库
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //AOP编程
+    implementation 'org.aspectj:aspectjrt:1.9.4'
+    //方法较多时
+    implementation 'com.android.support:multidex:1.0.3'
+    //xui相关
+    implementation project(':xui_lib')
+    implementation 'com.github.xuexiangjys:XUpdate:1.1.1'
+    implementation "com.google.code.gson:gson:2.8.2"
+    //AOP切面编程
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+    //网络请求的实现一
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'com.github.xuexiangjys:XHttp2:1.0.2'
+    //ui框架
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //TabBar
+   // implementation 'com.github.xuexiangjys:JPTabBar:1.0.1'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //奶油刀依赖库
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    //奶油刀编译库
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    //页面路由
+    implementation 'com.github.xuexiangjys.XRouter:xrouter-runtime:1.0.1'
+    annotationProcessor 'com.github.xuexiangjys.XRouter:xrouter-compiler:1.0.1'
+    //XPage页面框架
+    implementation 'com.github.xuexiangjys.XPage:xpage-lib:2.2.9'
+    annotationProcessor 'com.github.xuexiangjys.XPage:xpage-compiler:2.2.9'
+    //列表侧滑菜单
+    implementation 'com.yanzhenjie.recyclerview:support:1.3.2'
+    //超级TextView
+    implementation 'com.github.chenBingX:SuperTextView:3.2.5'
+    //切片
+    implementation 'com.github.xuexiangjys.XAOP:xaop-runtime:1.0.5x'
+    //弹性布局
+    implementation 'com.google.android:flexbox:0.3.1'
+    //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    //适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
+    //分割线
+    implementation 'com.github.arvinljw:ItemDecorationHelper:v1.0.5'
+    //视频
+    implementation project(':dkplayer-java')
+    implementation project(':dkplayer-ui')
+    implementation project(':dkplayer-videocache')
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //lombok插件
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    annotationProcessor "org.projectlombok:lombok:1.16.18"
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    //only Retrofit（只用Retrofit联网）
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    //日志拦截器
+    implementation'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //Rxjava and Retrofit（Retrofit+Rx需要添加的依赖）
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //城市选择器
+    implementation project(':citypicker')
+    //联系人
+    implementation project(':contract')
+    //app列表
+    implementation project(':apklist')
+    //百度定位
+    implementation project(':location')
+    //android设备ID
+    implementation project(':antifake')
+    //下拉框
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    //事件总线
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //喜欢按钮
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    //封装空白页的回收视图
+    implementation 'com.jude:easyrecyclerview:4.4.2'
+    //封装好的WebView
+    implementation 'com.just.agentweb:agentweb:4.1.2' // (必选)
+    //加载svg图像
+    implementation 'com.pixplicity.sharp:library:1.1.3@aar'
+    //html转义字符
+    implementation 'org.apache.commons:commons-text:1.6'
+    //弹出框封装
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    //m3u8管理器
+    implementation "${lib.m3u8Manager}"
+    //下载弹出框
+    implementation "${lib.loadDialog}"
+    //greenDao代理类,增强功能的
+    implementation "${lib.greenDaoHelper}"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+//aop脚本编写
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+final def log = project.logger
+final def variants = project.android.applicationVariants
+variants.all { variant ->
+    if (!variant.buildType.isDebuggable()) {
+        log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
+        return;
+    }
+
+    JavaCompile javaCompile = variant.javaCompile
+    javaCompile.doLast {
+        String[] args = ["-showWeaveInfo",
+                         "-1.8",
+                         "-inpath", javaCompile.destinationDir.toString(),
+                         "-aspectpath", javaCompile.classpath.asPath,
+                         "-d", javaCompile.destinationDir.toString(),
+                         "-classpath", javaCompile.classpath.asPath,
+                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
+        log.debug "ajc args: " + Arrays.toString(args)
+
+        MessageHandler handler = new MessageHandler(true);
+        new Main().run(args, handler);
+        for (IMessage message : handler.getMessages(null, true)) {
+            switch (message.getKind()) {
+                case IMessage.ABORT:
+                case IMessage.ERROR:
+                case IMessage.FAIL:
+                    log.error message.message, message.thrown
+                    break;
+                case IMessage.WARNING:
+                    log.warn message.message, message.thrown
+                    break;
+                case IMessage.INFO:
+                    log.info message.message, message.thrown
+                    break;
+                case IMessage.DEBUG:
+                    log.debug message.message, message.thrown
+                    break;
+            }
+        }
+    }
+}

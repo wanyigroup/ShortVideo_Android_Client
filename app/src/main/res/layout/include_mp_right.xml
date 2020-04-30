@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Container"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:layout_width="?attr/icon_large_width"
+                android:layout_height="?attr/icon_large_height"
+                android:alpha="0.8"
+                android:padding="@dimen/dp_3"
+                android:adjustViewBounds="true"
+                android:src="@drawable/movie_selector_like"
+                android:layout_gravity="center"
+                android:id="@+id/img_loving"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.0w"
+                android:alpha="0.8"
+                android:textSize="?attr/xui_config_size_content_text"
+                android:textColor="?attr/xui_config_color_separator_light"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                android:id="@+id/img_loving_num"
+                >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="@dimen/dp_10"
+                android:alpha="0.8"
+                android:layout_width="?attr/icon_large_width"
+                android:layout_height="?attr/icon_large_height"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_collect"
+                android:src="@drawable/movie_selector_collection"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:id="@+id/img_collect_txt"
+                android:text="2.0w"
+                android:textSize="?attr/xui_config_size_content_text"
+                android:textColor="?attr/xui_config_color_separator_light"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="@dimen/dp_10"
+                android:alpha="0.8"
+                android:layout_width="?attr/icon_large_width"
+                android:layout_height="?attr/icon_large_height"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_watch"
+                android:src="@mipmap/img_watch"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:id="@+id/img_watch_num"
+                android:text="2.0w"
+                android:textSize="?attr/xui_config_size_content_text"
+                android:textColor="?attr/xui_config_color_separator_light"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

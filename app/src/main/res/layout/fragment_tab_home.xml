@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/view_pager"
+            android:layout_below="@id/tab_layout"
+            >
+        </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/xui_actionbar_height"
+        >
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/tab_layout"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabIndicatorColor="?attr/xui_config_color_separator_light"
+        app:tabTextColor="?attr/xui_config_color_separator_dark"
+        app:tabSelectedTextColor="?attr/xui_config_color_separator_light"
+        app:tabRippleColor="@color/xui_transparent"
+        >
+    </com.google.android.material.tabs.TabLayout>
+    <ImageView
+        style="@style/TopIconImage"
+        android:id="@+id/bt_search"
+        android:clickable="true"
+        android:layout_marginRight="?attr/xui_config_content_spacing_horizontal"
+        android:src="@drawable/main_tab_selector_search"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+    </ImageView>
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

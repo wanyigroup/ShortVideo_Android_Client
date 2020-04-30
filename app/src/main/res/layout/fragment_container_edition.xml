@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/Container"
+        >
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="?attr/xui_config_size_explain_text"
+        android:textColor="?attr/xui_config_color_explain_text"
+        android:text="您所填写的资料仅用于信息展示和个人内容推荐"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        style="@style/user_photo"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:src="@mipmap/placeholder_photo"
+        android:id="@+id/user_photo"
+        >
+
+    </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基本资料"
+        android:textColor="?attr/xui_config_color_title_text"
+        android:textSize="?attr/xui_config_size_title_text"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_70"
+        android:orientation="vertical"
+        >
+        <LinearLayout style="@style/config_linear">
+            <TextView
+                android:text="昵称"
+                style="@style/config_title">
+            </TextView>
+            <TextView
+                android:text="郭敬明"
+                android:id="@+id/user_name"
+                android:gravity="left|center_vertical"
+                style="@style/config_spinner">
+            </TextView>
+        </LinearLayout>
+        <View
+            style="@style/horizontal_underline"
+            ></View>
+        <LinearLayout style="@style/config_linear">
+            <TextView
+                android:text="性别"
+                style="@style/config_title">
+            </TextView>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:text="男"
+                android:id="@+id/spinner_user_sex"
+                style="@style/config_spinner">
+            </com.jaredrummler.materialspinner.MaterialSpinner>
+        </LinearLayout>
+        <View
+            style="@style/horizontal_underline"
+            ></View>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuexiang.xui.widget.layout.XUIFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rv_zoom="true"
+    app:rv_type="doubleRipple"
+    app:rv_alpha="80"
+    >
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dp_40">
+
+      <TextView
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:id="@+id/trend_index"
+          android:text="1"
+          android:textSize="?attr/xui_config_size_title_text"
+          android:layout_marginLeft="@dimen/dp_5"
+          android:textColor="@color/xui_config_color_red"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+      </TextView>
+
+      <TextView
+          app:layout_constraintLeft_toRightOf="@id/trend_index"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginLeft="@dimen/dp_10"
+          android:textColor="?attr/xui_config_color_title_text"
+          android:textSize="?attr/xui_config_size_title_text"
+          android:text="信息标题"
+          android:id="@+id/trend_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+      </TextView>
+
+
+
+      <TextView
+          app:layout_constraintLeft_toRightOf="@id/trend_title"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:id="@+id/trend_num"
+          android:layout_marginLeft="@dimen/dp_20"
+          android:text="8000"
+          android:textColor="?attr/xui_config_color_content_text"
+          android:textSize="?attr/xui_config_size_content_text"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          >
+      </TextView>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.xuexiang.xui.widget.layout.XUIFrameLayout>

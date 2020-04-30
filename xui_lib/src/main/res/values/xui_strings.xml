@@ -1,0 +1,61 @@
+<resources>
+    <!--默认字体路径-->
+    <string name="default_app_font_path"></string>
+
+    <string name="xui_tip_expand">展开</string>
+    <string name="xui_tip_shrink">收缩</string>
+
+    <string name="xui_met_input_error">输入不符合要求!</string>
+    <string name="xui_met_not_allow_empty">输入不能为空!</string>
+
+    <!--Button-->
+    <string name="xui_lab_button_submit">确 定</string>
+    <string name="xui_lab_button_cancel">取 消</string>
+    <string name="xui_lab_button_reset">重 置</string>
+
+    <!--StateLayout-->
+    <string name="xui_tip_error_message">出错了，请稍后重试</string>
+    <string name="xui_tip_loading_message">数据加载中…</string>
+    <string name="xui_tip_empty_message">暂无数据</string>
+    <string name="xui_tip_no_network">请检查您的网络连接</string>
+    <string name="xui_tip_retry">重试</string>
+
+    <!--StatefulLayout-->
+    <string name="stfErrorMessage">@string/xui_tip_error_message</string>
+    <string name="stfOfflineMessage">@string/xui_tip_no_network</string>
+    <string name="stfEmptyMessage">@string/xui_tip_empty_message</string>
+    <string name="stfLoadingMessage">@string/xui_tip_loading_message</string>
+    <string name="stfRetryButtonText">@string/xui_tip_retry</string>
+    <string name="stfLocationOffMessage">请打开定位</string>
+    <string name="stf_retry">轻触屏幕重试</string>
+
+    <string name="xui_preview_video_path_error">资源加载失败</string>
+    <string name="xui_preview_play_failed">播放失败</string>
+    <string name="xui_preview_count_string">%1$d/%2$d</string>
+
+    <string name="xui_try_immediately">立即体验</string>
+    <string name="xui_jump">跳过</string>
+
+    <!--PickerView-->
+    <string name="xui_picker_view_cancel">取消</string>
+    <string name="xui_picker_view_submit">确定</string>
+    <string name="xui_picker_view_year">年</string>
+    <string name="xui_picker_view_month">月</string>
+    <string name="xui_picker_view_day">日</string>
+    <string name="xui_picker_view_hours">时</string>
+    <string name="xui_picker_view_minutes">分</string>
+    <string name="xui_picker_view_seconds">秒</string>
+
+    <!--MaterialSearchView-->
+    <string name="xui_search_hint">Search</string>
+    <string name="xui_tip_no_recognize_speech">当前设备不支持语音输入！</string>
+
+    <!--Behavior-->
+    <string name="xui_float_behavior">com.xuexiang.xui.widget.behavior.FloatingActionButtonBehavior</string>
+    <string name="xui_bottom_behavior">com.xuexiang.xui.widget.behavior.BottomNavigationViewBehavior</string>
+    <string name="xui_title_behavior">com.xuexiang.xui.widget.behavior.ToolBarBehavior</string>
+
+    <string name="xui_count_down_finish">重新获取</string>
+
+
+</resources>

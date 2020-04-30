@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ActionBar  TitleBar-->
+    <declare-styleable name="TitleBar">
+        <!--标题栏的高度，默认52dp-->
+        <attr name="tb_barHeight" format="dimension" />
+        <!--是否是沉浸式标题栏，默认是false-->
+        <attr name="tb_immersive" format="boolean" />
+        <!--左右图标和文字的padding-->
+        <attr name="tb_actionPadding" format="dimension" />
+        <!--标题栏两侧控件的padding-->
+        <attr name="tb_sideTextPadding" format="dimension" />
+        <!--标题栏左侧文字的颜色-->
+        <attr name="tb_sideTextColor" format="color" />
+        <!--标题栏标题文字的颜色-->
+        <attr name="tb_titleTextColor" format="color" />
+        <!--标题栏副标题文字的颜色-->
+        <attr name="tb_subTitleTextColor" format="color" />
+        <!---标题栏右侧文字的颜色-->
+        <attr name="tb_actionTextColor" format="color" />
+        <!--中间title的对齐方式-->
+        <attr name="tb_centerGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!--标题栏左侧文字的大小-->
+        <attr name="tb_sideTextSize" format="dimension" />
+        <!--标题栏标题文字的大小-->
+        <attr name="tb_titleTextSize" format="dimension" />
+        <!--标题栏副标题文字的大小-->
+        <attr name="tb_subTitleTextSize" format="dimension" />
+        <!--标题栏右侧文字的大小-->
+        <attr name="tb_actionTextSize" format="dimension" />
+        <!--文字的内容以及图标内容-->
+        <attr name="tb_leftImageResource" format="reference" />
+        <!--标题栏左侧的文字-->
+        <attr name="tb_leftText" format="string" />
+        <!--标题栏标题的文字-->
+        <attr name="tb_titleText" format="string" />
+        <!--标题栏副标题的文字-->
+        <attr name="tb_subTitleText" format="string" />
+        <!--标题栏分割线的颜色-->
+        <attr name="tb_dividerColor" format="color" />
+        <!--标题栏分割线的高度-->
+        <attr name="tb_dividerHeight" format="dimension" />
+        <!--标题栏背景色是否使用主题颜色，默认是true-->
+        <attr name="tb_useThemeColor" format="boolean" />
+    </declare-styleable>
+    <attr name="TitleBarStyle" format="reference" />
+
+    <!--XUILayout-->
+    <declare-styleable name="XUILayout">
+        <attr name="android:maxWidth" />
+        <attr name="android:maxHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:minHeight" />
+        <!--底部分割线的高度，默认0-->
+        <attr name="xui_bottomDividerHeight" format="dimension" />
+        <!--底部分割线的颜色，默认R.attr.xui_config_color_separator_light-->
+        <attr name="xui_bottomDividerColor" format="color|reference" />
+        <!--底部分割线左侧的边距，默认0-->
+        <attr name="xui_bottomDividerInsetLeft" format="dimension" />
+        <!--底部分割线右侧的边距，默认0-->
+        <attr name="xui_bottomDividerInsetRight" format="dimension" />
+        <!--顶部分割线的高度，默认0-->
+        <attr name="xui_topDividerHeight" format="dimension" />
+        <!--顶部分割线的颜色，默认R.attr.xui_config_color_separator_light-->
+        <attr name="xui_topDividerColor" format="color|reference" />
+        <!--顶部分割线左侧的边距，默认0-->
+        <attr name="xui_topDividerInsetLeft" format="dimension" />
+        <!--顶部分割线右侧的边距，默认0-->
+        <attr name="xui_topDividerInsetRight" format="dimension" />
+        <!--左侧分割线的宽度，默认0-->
+        <attr name="xui_leftDividerWidth" format="dimension" />
+        <!--左侧分割线的颜色，默认R.attr.xui_config_color_separator_light-->
+        <attr name="xui_leftDividerColor" format="color|reference" />
+        <!--左侧分割线顶部的边距，默认0-->
+        <attr name="xui_leftDividerInsetTop" format="dimension" />
+        <!--左侧分割线底部的边距，默认0-->
+        <attr name="xui_leftDividerInsetBottom" format="dimension" />
+        <!--右侧分割线的宽度，默认0-->
+        <attr name="xui_rightDividerWidth" format="dimension" />
+        <!--右侧分割线的颜色，默认R.attr.xui_config_color_separator_light-->
+        <attr name="xui_rightDividerColor" format="color|reference" />
+        <!--右侧分割线顶部的边距，默认0-->
+        <attr name="xui_rightDividerInsetTop" format="dimension" />
+        <!--右侧分割线底部的边距，默认0-->
+        <attr name="xui_rightDividerInsetBottom" format="dimension" />
+        <!--圆角度数，默认0-->
+        <attr name="xui_radius" format="dimension" />
+        <!--边框颜色，默认0-->
+        <attr name="xui_borderColor" format="color" />
+        <!--边框宽度，默认1px-->
+        <attr name="xui_borderWidth" format="dimension" />
+        <!--21版本下，裁剪圆角边框的镂空颜色-->
+        <attr name="xui_outerNormalColor" format="color|reference" />
+        <!--隐藏圆角的类型，默认none-->
+        <attr name="xui_hideRadiusSide" format="enum">
+            <enum name="none" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="left" value="4" />
+        </attr>
+        <!--是否显示边框, 默认true-->
+        <attr name="xui_showBorderOnlyBeforeL" format="boolean" />
+        <!--阴影的大小，默认0-->
+        <attr name="xui_shadowElevation" format="dimension" />
+        <!--是否使用主题的阴影大小，默认是false,主题默认阴影大小是14dp-->
+        <attr name="xui_useThemeGeneralShadowElevation" format="boolean" />
+        <!--阴影的透明度，默认0.25-->
+        <attr name="xui_shadowAlpha" format="float" />
+        <!--轮廓的顶部边距，默认0-->
+        <attr name="xui_outlineInsetTop" format="dimension" />
+        <!--轮廓的左侧边距，默认0-->
+        <attr name="xui_outlineInsetLeft" format="dimension" />
+        <!--轮廓的右侧边距，默认0-->
+        <attr name="xui_outlineInsetRight" format="dimension" />
+        <!--轮廓的底部边距，默认0-->
+        <attr name="xui_outlineInsetBottom" format="dimension" />
+        <!--轮廓是否使用内边距，默认false-->
+        <attr name="xui_outlineExcludePadding" format="boolean" />
+    </declare-styleable>
+
+    <!--可伸展的布局-->
+    <declare-styleable name="ExpandableLayout">
+        <!--动画持续的时间，默认是300ms-->
+        <attr name="el_duration" format="integer" />
+        <!--是否是展开的，默认是false-->
+        <attr name="el_expanded" format="boolean" />
+        <!--视差效果，默认是1-->
+        <attr name="el_parallax" format="float" />
+        <!--对齐方式，默认是VERTICAL，垂直-->
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <!--============================Banner=========================================-->
+
+    <!-- BaseBanner -->
+    <declare-styleable name="BaseBanner">
+        <!-- Banner高宽比,范围0-1,默认0.5(for LoopViewPager)-->
+        <attr name="bb_scale" format="float" />
+
+        <!--for LoopViewPager start-->
+        <!-- 是否支持循环,默认true-->
+        <attr name="bb_isLoopEnable" format="boolean" />
+        <!-- 滚动延时,默认5秒-->
+        <attr name="bb_delay" format="integer" />
+        <!-- 滚动间隔,默认5秒-->
+        <attr name="bb_period" format="integer" />
+        <!-- 是否支持自动滚动,默认true-->
+        <attr name="bb_isAutoScrollEnable" format="boolean" />
+        <!--for LoopViewPager end-->
+
+        <!-- 设置底部背景条颜色,默认透明 -->
+        <attr name="bb_barColor" format="color" />
+        <!-- 设置当滚动到最后一个item时是否显示底部背景条 -->
+        <attr name="bb_isBarShowWhenLast" format="boolean" />
+        <!-- 设置底部背景条padding,单位dp -->
+        <attr name="bb_barPaddingLeft" format="dimension" />
+        <attr name="bb_barPaddingTop" format="dimension" />
+        <attr name="bb_barPaddingRight" format="dimension" />
+        <attr name="bb_barPaddingBottom" format="dimension" />
+        <!-- 设置标题文字颜色,默认"#ffffff" -->
+        <attr name="bb_textColor" format="color" />
+        <!-- 设置标题文字大小,单位sp,默认14sp -->
+        <attr name="bb_textSize" format="dimension" />
+        <!-- 设置是否显示标题,默认true  -->
+        <attr name="bb_isTitleShow" format="boolean" />
+        <!-- 设置是否显示指示器,默认true  -->
+        <attr name="bb_isIndicatorShow" format="boolean" />
+        <!-- 设置指示器位置.默认Gravity.CENTER时文字不显示-->
+        <attr name="bb_indicatorGravity" format="enum">
+            <enum name="CENTER" value="17" />
+            <enum name="LEFT" value="3" />
+            <enum name="RIGHT" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <!-- BaseIndicatorBanner -->
+    <declare-styleable name="BaseIndicatorBanner">
+        <!-- 设置指示器样式 -->
+        <attr name="bb_indicatorStyle" format="enum">
+            <!--图片资源-->
+            <enum name="DRAWABLE_RESOURCE" value="0" />
+            <!--矩形-->
+            <enum name="CORNER_RECTANGLE" value="1" />
+        </attr>
+        <!-- 设置指示器宽度,单位dp,默认6dp -->
+        <attr name="bb_indicatorWidth" format="dimension" />
+        <!-- 设置指示器高度,单位dp,默认6dp -->
+        <attr name="bb_indicatorHeight" format="dimension" />
+        <!-- 设置指示器间距,单位dp,默认6dp -->
+        <attr name="bb_indicatorGap" format="dimension" />
+
+        <!-- 设置指示器选中颜色,默认"#ffffff" -->
+        <attr name="bb_indicatorSelectColor" format="color" />
+        <!-- 设置指示器未选中颜色,默认"#88ffffff"  -->
+        <attr name="bb_indicatorUnselectColor" format="color" />
+        <!-- 设置指示器圆角弧度,单位dp,默认3dp -->
+        <attr name="bb_indicatorCornerRadius" format="dimension" />
+
+        <!-- 设置指示器选中drawable资源 -->
+        <attr name="bb_indicatorSelectRes" format="reference" />
+        <!-- 设置指示器未选中drawable资源 -->
+        <attr name="bb_indicatorUnselectRes" format="reference" />
+    </declare-styleable>
+
+    <!--RecyclerView实现的banner-->
+    <declare-styleable name="RecyclerViewBannerBase">
+        <attr name="rvbb_interval" format="integer" />
+        <attr name="rvbb_showIndicator" format="boolean" />
+        <attr name="rvbb_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="rvbb_autoPlaying" format="boolean" />
+        <attr name="rvbb_indicatorSelectedSrc" format="reference" />
+        <attr name="rvbb_indicatorUnselectedSrc" format="reference" />
+        <attr name="rvbb_indicatorSize" format="dimension" />
+        <attr name="rvbb_indicatorSelectedColor" format="color" />
+        <attr name="rvbb_indicatorUnselectedColor" format="color" />
+        <attr name="rvbb_indicatorSpace" format="dimension" />
+        <attr name="rvbb_indicatorMarginLeft" format="dimension" />
+        <attr name="rvbb_indicatorMarginRight" format="dimension" />
+        <attr name="rvbb_indicatorMarginBottom" format="dimension" />
+        <attr name="rvbb_indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BannerLayout">
+        <!--轮播间隔，单位ms，默认是4000ms-->
+        <attr name="bl_interval" format="integer" />
+        <!--是否显示轮播索引，默认是true-->
+        <attr name="bl_showIndicator" format="boolean" />
+        <!--轮播的方向，默认是horizontal-->
+        <attr name="bl_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!--是否是自动轮播，默认是true-->
+        <attr name="bl_autoPlaying" format="boolean" />
+        <!--轮播索引选中的效果-->
+        <attr name="bl_indicatorSelectedSrc" format="reference" />
+        <!--轮播索引未选中的效果-->
+        <attr name="bl_indicatorUnselectedSrc" format="reference" />
+        <!--轮播索引的大小，默认5dp-->
+        <attr name="bl_indicatorSize" format="dimension" />
+        <!--轮播索引选中的颜色-->
+        <attr name="bl_indicatorSelectedColor" format="color" />
+        <!--轮播索引未选中的颜色-->
+        <attr name="bl_indicatorUnselectedColor" format="color" />
+        <!--索引器之间的间隔，默认4dp-->
+        <attr name="bl_indicatorSpace" format="dimension" />
+        <!--索引器的左侧边距，默认16dp-->
+        <attr name="bl_indicatorMarginLeft" format="dimension" />
+        <!--索引器的右侧边距，默认0dp-->
+        <attr name="bl_indicatorMarginRight" format="dimension" />
+        <!--索引器的底部边距，默认11dp-->
+        <attr name="bl_indicatorMarginBottom" format="dimension" />
+        <!--索引器的对齐方式，默认left-->
+        <attr name="bl_indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!--轮播图之间的间距，默认是10dp-->
+        <attr name="bl_itemSpace" format="dimension" />
+        <!--图片缩放系数，默认是1.2F-->
+        <attr name="bl_centerScale" format="float" />
+        <!--轮播速度，默认是1.0F-->
+        <attr name="bl_moveSpeed" format="float" />
+    </declare-styleable>
+    <attr name="BannerLayoutStyle" format="integer" />
+
+    <!--=====================================================================-->
+
+    <!-- StatefulLayout -->
+    <declare-styleable name="StatefulLayout">
+        <!--是否启用切换动画，默认是true-->
+        <attr name="stf_animationEnabled" format="boolean" />
+        <!--进入的动画-->
+        <attr name="stf_inAnimation" format="reference" />
+        <!--退出的动画-->
+        <attr name="stf_outAnimation" format="reference" />
+    </declare-styleable>
+    <attr name="StatefulLayoutStyle" format="reference" />
+
+
+    <!--MultipleStatusView-->
+    <declare-styleable name="MultipleStatusView">
+        <!--加载页面-->
+        <attr name="msv_loadingView" format="reference" />
+        <!--错误页面-->
+        <attr name="msv_errorView" format="reference" />
+        <!--空页面-->
+        <attr name="msv_emptyView" format="reference" />
+        <!--没有网络的页面-->
+        <attr name="msv_noNetworkView" format="reference" />
+        <!--主内容页面-->
+        <attr name="msv_contentView" format="reference" />
+    </declare-styleable>
+    <attr name="MultipleStatusViewStyle" format="reference" />
+
+
+    <!--=====================================================================-->
+
+    <!--LoadingView-->
+    <declare-styleable name="LoadingView">
+        <!--loading加载画笔的粗细-->
+        <attr name="lv_width" format="dimension" />
+        <!--loading加载画笔的颜色-->
+        <attr name="lv_color" format="color" />
+        <!--loading加载旋转的速度-->
+        <attr name="lv_speed" format="integer" />
+        <!--是否有loading中心的图标， 默认是true-->
+        <attr name="lv_has_icon" format="boolean" />
+        <!--loading中心的图标-->
+        <attr name="lv_icon" format="reference" />
+        <!--loading中心图标缩放的比例, 默认是0.5-->
+        <attr name="lv_icon_scale" format="float" />
+        <!--圆弧的角度-->
+        <attr name="lv_arc_degree" format="integer" />
+        <!--是否自动旋转，无需人工控制，默认是true-->
+        <attr name="lv_auto" format="boolean" />
+        <!--是否单弧旋转，默认false-->
+        <attr name="lv_arc_single" format="boolean" />
+    </declare-styleable>
+
+    <attr name="MiniLoadingStyle" format="reference" />
+    <declare-styleable name="MiniLoadingView">
+        <!--loading控件的大小，默认32dp-->
+        <attr name="mlv_loading_view_size" format="dimension" />
+        <!--loading控件的颜色，默认白色-->
+        <attr name="mlv_loading_view_color" format="color" />
+    </declare-styleable>
+
+    <!--LoadingViewLayout-->
+    <declare-styleable name="LoadingViewLayout">
+        <!--loading中心的图标-->
+        <attr name="lvl_icon" format="reference" />
+        <!--loading提示信息-->
+        <attr name="lvl_message" format="string" />
+    </declare-styleable>
+
+    <!--FlowTagLayout-->
+    <declare-styleable name="FlowTagLayout">
+        <!--选择模式，默认不可选-->
+        <attr name="ftl_check_mode" format="enum">
+            <!--不可选择-->
+            <enum name="none" value="0" />
+            <!--单选-->
+            <enum name="single" value="1" />
+            <!--多选-->
+            <enum name="multi" value="2" />
+            <!--只是展示-->
+            <enum name="display" value="3" />
+        </attr>
+        <!-- 流标签的可选项  -->
+        <attr name="ftl_entries" format="reference" />
+        <!-- 流标签默认的已选项索引  -->
+        <attr name="ftl_selecteds" format="reference" />
+        <!-- 单选模式下选中是否可取消，默认是false  -->
+        <attr name="ftl_single_cancelable" format="boolean" />
+    </declare-styleable>
+
+    <!--=============================ProgressBar========================================-->
+
+    <!--MaterialProgressBar-->
+    <declare-styleable name="MaterialProgressBar">
+        <!-- 进度条的样式：环形或水平，默认是环形-->
+        <attr name="mpb_progressStyle" format="enum">
+            <enum name="circular" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <!--无论进度 determinate（确定）或 indeterminate（不确定）的drawables都可以设置在进度条上，默认是false-->
+        <attr name="mpb_setBothDrawables" format="boolean" />
+        <!--是否使用进度条内部的padding，默认为true-->
+        <attr name="mpb_useIntrinsicPadding" format="boolean" />
+        <!--进度条是否必须有背景，水平进度条默认是true，环形进度条默认是false-->
+        <attr name="mpb_showProgressBackground" format="boolean" />
+        <!--进度确定的环形进度条样式：normal和dynamic，默认是normal-->
+        <attr name="mpb_determinateCircularProgressStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dynamic" value="1" />
+        </attr>
+
+        <!-- ********************进度确定的进度条色调************** -->
+        <!--进度条的主色调-->
+        <attr name="mpb_progressTint" format="color|reference" />
+        <!--进度条色调的叠加模式, 默认无。详见：http://www.jianshu.com/p/d11892bbe055-->
+        <attr name="mpb_progressTintMode" format="enum">
+            <!--在目标图像上层绘制源图像-->
+            <enum name="src_over" value="3" />
+            <!--在两者相交的地方绘制源图像，并且绘制的效果会受到目标图像对应地方透明度的影响-->
+            <enum name="src_in" value="5" />
+            <!--源图像和目标图像相交处绘制源图像，不相交的地方绘制目标图像，并且相交处的效果会受到源图像和目标图像alpha的影响-->
+            <enum name="src_atop" value="9" />
+            <!--正片叠底，即查看每个通道中的颜色信息，并将基色与混合色复合。结果色总是较暗的颜色，任何颜色与黑色复合产生黑色，任何颜色与白色复合保持不变，当用黑色或白色以外的颜色绘画时，绘画工具绘制的连续描边产生逐渐变暗的颜色。-->
+            <enum name="multiply" value="14" />
+            <!--滤色，滤色模式与我们所用的显示屏原理相同，所以也有版本把它翻译成屏幕；简单的说就是保留两个图层中较白的部分，较暗的部分被遮盖；当一层使用了滤色（屏幕）模式时，图层中纯黑的部分变成完全透明，纯白部分完全不透明，其他的颜色根据颜色级别产生半透明的效果。-->
+            <enum name="screen" value="15" />
+            <!--滤色，滤色模式与我们所用的显示屏原理相同，所以也有版本把它翻译成屏幕；简单的说就是保留两个图层中较白的部分，较暗的部分被遮盖；当一层使用了滤色（屏幕）模式时，图层中纯黑的部分变成完全透明，纯白部分完全不透明，其他的颜色根据颜色级别产生半透明的效果。-->
+            <enum name="add" value="16" />
+        </attr>
+        <!--进度条的次色调-->
+        <attr name="mpb_secondaryProgressTint" format="color|reference" />
+        <!--进度条次色调的叠加模式-->
+        <attr name="mpb_secondaryProgressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <!--进度条背景的色调-->
+        <attr name="mpb_progressBackgroundTint" format="color|reference" />
+        <!--进度条背景色调的叠加模式-->
+        <attr name="mpb_progressBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+
+        <!--不确定进度的进度条色调-->
+        <attr name="mpb_indeterminateTint" format="color|reference" />
+        <!--不确定进度的进度条色调的叠加模式-->
+        <attr name="mpb_indeterminateTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+    </declare-styleable>
+
+    <!--星级评分控件-->
+    <declare-styleable name="RatingBar">
+        <!--总共最大的星级数，默认为5-->
+        <attr name="srb_numStars" format="integer" />
+        <!--最小星级数，默认为0-->
+        <attr name="srb_minimumStars" format="float" />
+        <!--当前的星级，默认为0-->
+        <attr name="srb_rating" format="float" />
+        <!--星星之间的间距，默认20px-->
+        <attr name="srb_starPadding" format="dimension" />
+        <!--星星为空时的图案，默认R.drawable.srb_ic_empty-->
+        <attr name="srb_drawableEmpty" format="reference" />
+        <!--星星填充时的图案，默认R.drawable.srb_ic_filled-->
+        <attr name="srb_drawableFilled" format="reference" />
+        <!--是否只是指示器，不可以评分？默认false-->
+        <attr name="srb_isIndicator" format="boolean" />
+        <!--是否可以滑动设置评分，默认true-->
+        <attr name="srb_scrollable" format="boolean" />
+        <!--是否可以点击设置评分，默认true-->
+        <attr name="srb_clickable" format="boolean" />
+        <!--重复点击是否可以清空评分，默认true-->
+        <attr name="srb_clearRatingEnabled" format="boolean" />
+        <!--星星的宽度，默认WRAP_CONTENT-->
+        <attr name="srb_starWidth" format="dimension" />
+        <!--星星的高度，默认WRAP_CONTENT-->
+        <attr name="srb_starHeight" format="dimension" />
+        <!--星星的进度单位，默认是1-->
+        <attr name="srb_stepSize" format="float" />
+    </declare-styleable>
+
+    <!--CircleProgressView-->
+    <declare-styleable name="CircleProgressView">
+        <!--起始进度，默认是0-->
+        <attr name="cpv_start_progress" format="integer" />
+        <!--终止进度，默认是60-->
+        <attr name="cpv_end_progress" format="integer" />
+        <!--渐变效果的起始颜色，默认是#FFC288-->
+        <attr name="cpv_start_color" format="color" />
+        <!--渐变效果的终止颜色，默认是#FF8F5D-->
+        <attr name="cpv_end_color" format="color" />
+        <!--是否显示轨迹背景， 默认是false-->
+        <attr name="cpv_isTracked" format="boolean" />
+        <!-- 轨迹宽度（边界宽度）,默认是16dp-->
+        <attr name="cpv_track_width" format="dimension" />
+        <!--进度条的宽度, 默认是16dp-->
+        <attr name="cpv_progress_width" format="dimension" />
+        <!--轨迹背景的颜色，默认是#f3e5dd-->
+        <attr name="cpv_track_color" format="color" />
+        <!--动画时长， 默认是1200ms-->
+        <attr name="cpv_progress_duration" format="integer" />
+        <!--是否显示进度值文本， 默认是true-->
+        <attr name="cpv_progress_textVisibility" format="boolean" />
+        <!--进度值的颜色， 默认是R.attr.colorAccent-->
+        <attr name="cpv_progress_textColor" format="color" />
+        <!--进度值的文本字体大小， 默认是14sp-->
+        <attr name="cpv_progress_textSize" format="dimension" />
+        <!--动画类型， 默认是AccelerateDecelerateInterpolator-->
+        <attr name="cpv_animate_type" format="enum">
+            <!--加速减速插值器-->
+            <enum name="AccelerateDecelerateInterpolator" value="0" />
+            <!--线性插值器-->
+            <enum name="LinearInterpolator" value="1" />
+            <!--加速插值器-->
+            <enum name="AccelerateInterpolator" value="2" />
+            <!--减速插值器-->
+            <enum name="DecelerateInterpolator" value="3" />
+            <enum name="OvershootInterpolator" value="4" />
+        </attr>
+        <!--是否内部填充， 默认是false-->
+        <attr name="cpv_isFilled" format="boolean" />
+        <!--是选择圆形还是弧形进度条[true: 弧形, false: 圆形], 默认是false, 圆形-->
+        <attr name="cpv_circle_broken" format="boolean" />
+        <!--圆弧是否是分层级的（不连续），默认是false-->
+        <attr name="cpv_isGraduated" format="boolean" />
+        <!--指示条的宽度，默认是6dp-->
+        <attr name="cpv_scaleZone_width" format="dimension" />
+        <!--指示条的长度，默认是22dp-->
+        <attr name="cpv_scaleZone_length" format="dimension" />
+        <!--指示条的圆角，默认是8dp-->
+        <attr name="cpv_scaleZone_corner_radius" format="dimension" />
+        <!--指示条的padding，默认是16dp-->
+        <attr name="cpv_scaleZone_padding" format="dimension" />
+    </declare-styleable>
+    <attr name="CircleProgressViewStyle" format="reference" />
+
+    <!--HorizontalProgressView-->
+    <declare-styleable name="HorizontalProgressView">
+        <!--起始进度，默认是0-->
+        <attr name="hpv_start_progress" format="integer" />
+        <!--终止进度，默认是60-->
+        <attr name="hpv_end_progress" format="integer" />
+        <!--渐变效果的起始颜色，默认是#FFC288-->
+        <attr name="hpv_start_color" format="color" />
+        <!--渐变效果的终止颜色，默认是#FF8F5D-->
+        <attr name="hpv_end_color" format="color" />
+        <!--是否显示轨迹背景， 默认是false-->
+        <attr name="hpv_isTracked" format="boolean" />
+        <!--进度条的宽度（边界宽度）,默认是16dp-->
+        <attr name="hpv_track_width" format="dimension" />
+        <!--轨迹背景的颜色， 默认是#f3e5dd-->
+        <attr name="hpv_track_color" format="color" />
+        <!--动画时长， 默认是1200ms-->
+        <attr name="hpv_progress_duration" format="integer" />
+        <!--是否显示进度值文本， 默认是true-->
+        <attr name="hpv_progress_textVisibility" format="boolean" />
+        <!--进度值的颜色， 默认是R.attr.colorAccent-->
+        <attr name="hpv_progress_textColor" format="color" />
+        <!--进度值的文本字体大小， 默认是14sp-->
+        <attr name="hpv_progress_textSize" format="dimension" />
+        <!--动画类型， 默认是AccelerateDecelerateInterpolator-->
+        <attr name="hpv_animate_type" format="enum">
+            <!--加速减速插值器-->
+            <enum name="AccelerateDecelerateInterpolator" value="0" />
+            <!--线性插值器-->
+            <enum name="LinearInterpolator" value="1" />
+            <!--加速插值器-->
+            <enum name="AccelerateInterpolator" value="2" />
+            <!--减速插值器-->
+            <enum name="DecelerateInterpolator" value="3" />
+            <enum name="OvershootInterpolator" value="4" />
+        </attr>
+        <!--圆角半径,默认5dp-->
+        <attr name="hpv_corner_radius" format="dimension" />
+        <!--文字距离view的padding，默认5dp-->
+        <attr name="hpv_text_padding_bottom" format="dimension" />
+        <!--设置进度值是否跟随控件动画移动， 默认是true-->
+        <attr name="hpv_text_movedEnable" format="boolean" />
+    </declare-styleable>
+    <attr name="HorizontalProgressViewStyle" format="reference" />
+
+    <!--=============================Button========================================-->
+
+    <!-- 自定义按钮控件 ButtonView -->
+    <declare-styleable name="ButtonView">
+        <!-- 按钮的填充颜色，默认Color.TRANSPARENT -->
+        <attr name="textSolidColor" format="color" />
+        <!-- 按钮的选中颜色，默认Color.TRANSPARENT -->
+        <attr name="textSelectedSolidColor" format="color" />
+        <!-- 按钮的边框颜色，默认Color.TRANSPARENT -->
+        <attr name="textStrokeColor" format="color" />
+        <!-- 按钮的边框的宽度，默认0-->
+        <attr name="textStrokeWidth" format="dimension" />
+        <!-- 按钮的边角角度，默认0 -->
+        <attr name="textRadius" format="dimension" />
+        <attr name="textLeftTopRadius" format="dimension" />
+        <attr name="textLeftBottomRadius" format="dimension" />
+        <attr name="textRightTopRadius" format="dimension" />
+        <attr name="textRightBottomRadius" format="dimension" />
+        <!-- 按钮的图标 -->
+        <attr name="textDrawable" format="reference" />
+        <!-- 按钮的文字的颜色，默认Color.TRANSPARENT-->
+        <attr name="textNormalTextColor" format="color" />
+        <!-- 按钮的文字点击时的颜色，默认Color.TRANSPARENT-->
+        <attr name="textSelectedTextColor" format="color" />
+    </declare-styleable>
+
+    <!-- 倒计时按钮-->
+    <declare-styleable name="CountDownButton">
+        <!--倒计时过程中按钮文本的格式，默认"%ds"，直接显示剩余秒数-->
+        <attr name="cdbt_countDownFormat" format="string" />
+        <!--倒计时总时长(单位为毫秒)，默认 60000 毫秒-->
+        <attr name="cdbt_countDown" format="integer" />
+        <!--倒计时间隔(单位为毫秒)，默认 1000 毫秒-->
+        <attr name="cdbt_countDownInterval" format="integer" />
+        <!--倒计时是否可用，默认为 true-->
+        <attr name="cdbt_enableCountDown" format="boolean" />
+    </declare-styleable>
+    <attr name="CountDownButtonStyle" format="reference" />
+
+    <!-- ShadowButton -->
+    <declare-styleable name="ShadowButton">
+        <!--触摸时的颜色， 默认#9C000000-->
+        <attr name="sb_color_pressed" format="color" />
+        <!--未触摸/触摸层的颜色， 默认Color.TRANSPARENT-->
+        <attr name="sb_color_unpressed" format="color" />
+        <!--波纹的颜色，默认#FFEEEEEE-->
+        <attr name="sb_ripple_color" format="color" />
+        <!--波纹的透明度， 默认47-->
+        <attr name="sb_ripple_alpha" format="integer" />
+        <!--触摸时的透明度， 默认48-->
+        <attr name="sb_alpha_pressed" format="integer" />
+        <!--波纹持续的时间， 默认1000ms-->
+        <attr name="sb_ripple_duration" format="integer" />
+        <!--按钮角的弧度， 默认2dp-->
+        <attr name="sb_radius" format="dimension" />
+        <!--按钮的形状， 默认rectangle-->
+        <attr name="sb_shape_type" format="enum">
+            <enum name="round" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 圆形按钮 -->
+    <declare-styleable name="RoundButton">
+        <!-- 背景颜色-->
+        <attr name="rb_backgroundColor" format="reference" />
+        <!-- 边框颜色 -->
+        <attr name="rb_borderColor" format="reference" />
+        <!-- 边框宽度，默认1dp -->
+        <attr name="rb_borderWidth" format="dimension" />
+        <attr name="rb_isRadiusAdjustBounds" format="boolean" />
+        <!-- 圆角弧度，默认5dp -->
+        <attr name="rb_radius" format="dimension" />
+        <attr name="rb_radiusTopLeft" format="dimension" />
+        <attr name="rb_radiusTopRight" format="dimension" />
+        <attr name="rb_radiusBottomLeft" format="dimension" />
+        <attr name="rb_radiusBottomRight" format="dimension" />
+    </declare-styleable>
+
+    <!--开关按钮-->
+    <declare-styleable name="SwitchButton">
+        <!--滑动块的图片资源-->
+        <attr name="swb_thumbDrawable" format="reference" />
+        <!--滑动块的颜色-->
+        <attr name="swb_thumbColor" format="color|reference" />
+        <!--滑动块的Margin, 默认2dp-->
+        <attr name="swb_thumbMargin" format="dimension|reference" />
+        <attr name="swb_thumbMarginTop" format="dimension|reference" />
+        <attr name="swb_thumbMarginBottom" format="dimension|reference" />
+        <attr name="swb_thumbMarginLeft" format="dimension|reference" />
+        <attr name="swb_thumbMarginRight" format="dimension|reference" />
+        <!--滑动块的宽度, 默认20dp-->
+        <attr name="swb_thumbWidth" format="dimension|reference" />
+        <!--滑动块的高度-->
+        <attr name="swb_thumbHeight" format="dimension|reference" />
+        <!--滑动块的边角-->
+        <attr name="swb_thumbRadius" format="dimension|reference" />
+        <!--开关背景的边角-->
+        <attr name="swb_backRadius" format="dimension|reference" />
+        <!--开关的背景图片资源-->
+        <attr name="swb_backDrawable" format="reference" />
+        <!--开关的背景颜色-->
+        <attr name="swb_backColor" format="color|reference" />
+        <!--当开关进行切换的时候，背景是否渐变过渡-->
+        <attr name="swb_fadeBack" format="boolean" />
+        <!--开关和滑动块所占宽度的比例，默认是1.8f，必须大于1-->
+        <attr name="swb_thumbRangeRatio" format="float" />
+        <!--切换时，动画持续的时间 默认250ms-->
+        <attr name="swb_animationDuration" format="integer" />
+        <!--提示文字的颜色-->
+        <attr name="swb_tintColor" format="color|reference" />
+        <!--开关开时的文字-->
+        <attr name="swb_textOn" format="string" />
+        <!--开关关时的文字-->
+        <attr name="swb_textOff" format="string" />
+        <attr name="swb_textThumbInset" format="dimension" />
+        <!--文字多余的空间-->
+        <attr name="swb_textExtra" format="dimension" />
+        <attr name="swb_textAdjust" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 阴影 -->
+    <declare-styleable name="ShadowDrawable">
+        <!-- 阴影圆角弧度-->
+        <attr name="sd_shadowRadius" format="dimension" />
+        <!-- 阴影颜色 -->
+        <attr name="sd_shadowColor" format="color" />
+        <!--形状， 默认rectangle-->
+        <attr name="sd_shapeType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <!-- 圆角弧度 -->
+        <attr name="sd_shapeRadius" format="dimension" />
+        <!-- X轴阴影偏移 -->
+        <attr name="sd_offsetX" format="dimension" />
+        <!-- Y轴阴影偏移 -->
+        <attr name="sd_offsetY" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="sd_bgColor" format="color" />
+        <!-- 第二背景颜色，渐变色使用 -->
+        <attr name="sd_secondBgColor" format="color" />
+    </declare-styleable>
+
+    <!--RippleView-->
+    <declare-styleable name="RippleView">
+        <!--水波的透明度，默认90-->
+        <attr name="rv_alpha" format="integer" />
+        <!--水波变化的帧率，默认是10-->
+        <attr name="rv_frameRate" format="integer" />
+        <!--水波持续的时间，默认是400ms-->
+        <attr name="rv_rippleDuration" format="integer" />
+        <!--水波的颜色， 默认白色-->
+        <attr name="rv_color" format="color" />
+        <!--水波是否从控件的中心起，默认是false-->
+        <attr name="rv_centered" format="boolean" />
+        <!--水波的样式-->
+        <attr name="rv_type" format="enum">
+            <!--单波纹-->
+            <enum name="simpleRipple" value="0" />
+            <!--双波纹-->
+            <enum name="doubleRipple" value="1" />
+            <!--方形-->
+            <enum name="rectangle" value="2" />
+        </attr>
+        <!--水波的padding，默认是0-->
+        <attr name="rv_ripplePadding" format="dimension" />
+        <!--是否支持缩放动画，默认：false-->
+        <attr name="rv_zoom" format="boolean" />
+        <!--缩放倍率，默认是1.03F-->
+        <attr name="rv_zoomScale" format="float" />
+        <!--缩放动画持续的时间，默认是200ms-->
+        <attr name="rv_zoomDuration" format="integer" />
+    </declare-styleable>
+    <attr name="RippleViewStyle" format="reference" />
+
+    <!--===============================Spinner======================================-->
+    <!--MaterialSpinner-->
+    <declare-styleable name="MaterialSpinner">
+        <!--下拉框选择的内容-->
+        <attr name="ms_entries" format="reference" />
+        <!--下拉框箭头的资源-->
+        <attr name="ms_arrow_image" format="reference" />
+        <!--下拉框箭头的颜色， 默认和字体的颜色一样-->
+        <attr name="ms_arrow_tint" format="color" />
+        <!--下拉框是否有箭头， 默认是true-->
+        <attr name="ms_hide_arrow" format="boolean" />
+        <!--下拉框背景的颜色-->
+        <attr name="ms_background_color" format="color" />
+        <!--下拉框背景点击的效果-->
+        <attr name="ms_background_selector" format="integer" />
+        <!--下拉框字体的颜色-->
+        <attr name="ms_text_color" format="color" />
+        <!--下拉框 下拉条目最大的高度-->
+        <attr name="ms_dropdown_max_height" format="dimension" />
+        <!--下拉框 下拉条目的样式，默认wrap_content-->
+        <attr name="ms_dropdown_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!--下拉框 下拉条目的背景-->
+        <attr name="ms_dropdown_bg" format="reference" />
+        <!--是否在dialog中, 默认false-->
+        <attr name="ms_in_dialog" format="boolean" />
+        <!--弹出窗的动画样式-->
+        <attr name="ms_pop_anim_style" format="reference" />
+    </declare-styleable>
+    <attr name="MaterialSpinnerStyle" format="reference" />
+
+    <!--EditSpinner-->
+    <declare-styleable name="EditSpinner">
+        <!--输入提示-->
+        <attr name="es_hint" format="string" />
+        <!--输入框的高度-->
+        <attr name="es_height" format="dimension" />
+        <!--输入框的字体大小-->
+        <attr name="es_textSize" format="dimension" />
+        <!--输入框的字体颜色-->
+        <attr name="es_textColor" format="color" />
+        <!--箭头图标的margin-->
+        <attr name="es_arrowMargin" format="dimension" />
+        <!--箭头图标的资源-->
+        <attr name="es_arrowImage" format="reference" />
+        <!--输入框的背景-->
+        <attr name="es_background" format="reference" />
+        <attr name="es_maxLine" format="integer" />
+        <!--默认可选性内容-->
+        <attr name="es_entries" format="reference" />
+        <!--下拉框 下拉条目的背景-->
+        <attr name="es_dropdown_bg" format="reference" />
+        <!--输入下拉框是否可编辑, 默认true-->
+        <attr name="es_enable" format="boolean" />
+        <!--输入下拉框可输入的最大字符长度-->
+        <attr name="es_maxLength" format="integer" />
+        <!--输入下拉框可输入的最大字符宽度-->
+        <attr name="es_maxEms" format="integer" />
+        <!--输入下拉框在输入时是否显示筛选到的信息，默认true-->
+        <attr name="es_isShowFilterData" format="boolean" />
+        <!--输入下拉框显示筛选信息时，是否显示key为醒目的颜色，默认false-->
+        <attr name="es_isFilterKey" format="boolean" />
+        <!--弹出窗的动画样式-->
+        <attr name="es_popAnimStyle" format="reference" />
+    </declare-styleable>
+    <attr name="EditSpinnerStyle" format="reference" />
+
+    <!--===============================TextView======================================-->
+    <!-- MarqueeView -->
+    <declare-styleable name="MarqueeView">
+        <!--翻页的间隔-->
+        <attr name="mq_interval" format="integer" />
+        <!--动画的间隔-->
+        <attr name="mq_animDuration" format="integer" />
+        <!--动画的样式资源-->
+        <attr name="mq_animIn" format="reference" />
+        <attr name="mq_animOut" format="reference" />
+    </declare-styleable>
+
+    <!-- MarqueeTextView -->
+    <declare-styleable name="MarqueeTextView">
+        <!--尺寸是否自适应， 默认false-->
+        <attr name="mtv_isAutoFit" format="boolean" />
+        <!--控件是否自动显示与隐藏（根据显示数量）， 默认false-->
+        <attr name="mtv_isAutoDisplay" format="boolean" />
+    </declare-styleable>
+
+    <!--ExpandableTextView-->
+    <declare-styleable name="ExpandableTextView">
+        <!--最大收缩展示的行数，默认8行-->
+        <attr name="etv_maxCollapsedLines" format="integer" />
+        <!--动画持续的间隔，默认300ms-->
+        <attr name="etv_animDuration" format="integer" />
+        <!--动画开始时的透明度，默认0.7f-->
+        <attr name="etv_animAlphaStart" format="float" />
+        <!--伸展箭头的资源-->
+        <attr name="etv_expandDrawable" format="reference" />
+        <!--收缩箭头的资源-->
+        <attr name="etv_collapseDrawable" format="reference" />
+    </declare-styleable>
+
+    <!--LabelView-->
+    <declare-styleable name="LabelView">
+        <!--距离对角的距离-->
+        <attr name="label_distance" format="dimension" />
+        <!--标签的宽度-->
+        <attr name="label_height" format="dimension" />
+        <!--标签的背景颜色-->
+        <attr name="label_backgroundColor" format="color" />
+        <!--标签的边框宽度-->
+        <attr name="label_strokeWidth" format="dimension" />
+        <!--标签的边框颜色-->
+        <attr name="label_strokeColor" format="color" />
+        <!--标签的文字-->
+        <attr name="label_text" format="string" />
+        <!--标签的文字大小-->
+        <attr name="label_textSize" format="dimension" />
+        <!--标签的文字样式-->
+        <attr name="label_textStyle" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="BOLD" value="1" />
+            <enum name="ITALIC" value="2" />
+            <enum name="BOLD_ITALIC" value="3" />
+        </attr>
+        <!--标签的字体样式-->
+        <attr name="label_textFont" format="string" />
+        <!--标签的文字颜色-->
+        <attr name="label_textColor" format="color" />
+        <!--标签是否可见-->
+        <attr name="label_visual" format="boolean" />
+        <!--标签的对齐方式-->
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1" />
+            <enum name="RIGHT_TOP" value="2" />
+            <enum name="LEFT_BOTTOM" value="3" />
+            <enum name="RIGHT_BOTTOM" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutoFitTextView">
+        <!--自动字体大小适应功能是否开启，默认是true-->
+        <attr name="aftv_enable" format="boolean" />
+        <!--调整的最小的字体大小，默认是8sp-->
+        <attr name="aftv_minTextSize" format="dimension" />
+        <!--调整的精度，精度值越小，越精准，耗时越长，默认是0.5-->
+        <attr name="aftv_precision" format="float" />
+    </declare-styleable>
+    <attr name="AutoFitTextViewStyle" format="reference" />
+
+
+    <!--=============================EditText========================================-->
+    <!-- MaterialEditText -->
+    <declare-styleable name="MaterialEditText">
+        <!-- 线和文字的基础颜色，默认是black -->
+        <attr name="met_baseColor" format="color" />
+        <!-- 高亮样式的颜色 -->
+        <attr name="met_primaryColor" format="color" />
+        <!-- 悬浮提示文字的样式（默认是none）-->
+        <attr name="met_floatingLabel">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="highlight" value="2" />
+        </attr>
+        <!-- 出现错误时文字的颜色 -->
+        <attr name="met_errorColor" format="color" />
+        <!-- 是否允许输入为空， 默认是true -->
+        <attr name="met_allowEmpty" format="boolean" />
+        <!-- 为空的错误提示，默认是“输入不能为空” -->
+        <attr name="met_errorEmpty" format="string" />
+        <!-- 最少文字的限制（0代表无限）-->
+        <attr name="met_minCharacters" format="integer" />
+        <!-- 最多文字的限制（0代表无限） -->
+        <attr name="met_maxCharacters" format="integer" />
+        <!-- 底部文字是否显示单行，显示不全的省略号 -->
+        <attr name="met_singleLineEllipsis" format="boolean" />
+        <!-- 底部文字最小的行数 -->
+        <attr name="met_minBottomTextLines" format="integer" />
+        <!-- 在底部的辅助文字 -->
+        <attr name="met_helperText" format="string" />
+        <!-- 辅助文字的颜色 -->
+        <attr name="met_helperTextColor" format="color" />
+        <!-- 强调文字的字体 -->
+        <attr name="met_accentTypeface" format="string" />
+        <!-- 输入框字体 -->
+        <attr name="met_typeface" format="string" />
+        <!-- 自定义悬浮提示文字 -->
+        <attr name="met_floatingLabelText" format="string" />
+        <!-- 输入框文字与悬浮提示文字的间距 -->
+        <attr name="met_floatingLabelPadding" format="dimension" />
+        <!-- 隐藏底线 -->
+        <attr name="met_hideUnderline" format="boolean" />
+        <!-- 输入框底线的颜色 -->
+        <attr name="met_underlineColor" format="color" />
+        <!-- 是否自动校验 -->
+        <attr name="met_autoValidate" format="boolean" />
+        <!-- 左侧图标资源 -->
+        <attr name="met_iconLeft" format="reference" />
+        <!-- 右侧图标资源 -->
+        <attr name="met_iconRight" format="reference" />
+        <!-- 图标与输入区域的距离（默认8dp） -->
+        <attr name="met_iconPadding" format="dimension" />
+        <!-- 是否使用清除按钮 -->
+        <attr name="met_clearButton" format="boolean" />
+        <!-- 是否使用显示密码按钮 -->
+        <attr name="met_passWordButton" format="boolean" />
+        <!--密码输入框文字的样式是否是“*”，默认是false-->
+        <attr name="met_isAsteriskStyle" format="boolean" />
+        <!-- 悬浮提示文字的大小（默认12sp） -->
+        <attr name="met_floatingLabelTextSize" format="dimension" />
+        <!-- 悬浮提示文字的颜色 -->
+        <attr name="met_floatingLabelTextColor" format="color" />
+        <!-- 底部提示文字的大小（默认12sp）-->
+        <attr name="met_bottomTextSize" format="dimension" />
+        <!-- 悬浮提示一直显示（而不是通过动画显示／消失，默认false） -->
+        <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+        <!-- 是否一直显示辅助性文字（错误提示），无论是否在焦点。（默认false） -->
+        <attr name="met_helperTextAlwaysShown" format="boolean" />
+        <!-- 是否使用动画显示悬浮提示（默认true） -->
+        <attr name="met_floatingLabelAnimating" format="boolean" />
+        <!-- 输入文字的颜色 -->
+        <attr name="met_textColor" format="color" />
+        <!-- 提示文字的颜色 -->
+        <attr name="met_textColorHint" format="color" />
+        <!-- 是否失去焦点后自动校验（默认false）-->
+        <attr name="met_validateOnFocusLost" format="boolean" />
+        <!-- 是否在文字显示的时候开始计算文字的数量（默认true）-->
+        <attr name="met_checkCharactersCountAtBeginning" format="boolean" />
+        <!--校验的正则表达式-->
+        <attr name="met_regexp" format="string" />
+        <!--校验不通过的提示信息-->
+        <attr name="met_errorMessage" format="string" />
+    </declare-styleable>
+    <attr name="MaterialEditTextStyle" format="reference" />
+
+
+    <!-- 验证码输入框-->
+    <declare-styleable name="VerifyCodeEditText">
+        <!--输入框的数量，默认是4-->
+        <attr name="vcet_number" format="integer" />
+        <!--每一个输入框的宽度，默认21dp-->
+        <attr name="vcet_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="vcet_divider" format="reference" />
+        <!--输入框文字颜色，默认黑色-->
+        <attr name="vcet_text_color" format="color|reference" />
+        <!--输入框文字大小，默认16sp-->
+        <attr name="vcet_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时背景-->
+        <attr name="vcet_bg_focus" format="reference" />
+        <!--输入框没有焦点时背景-->
+        <attr name="vcet_bg_normal" format="reference" />
+        <!--是否是密码模式, 默认是false-->
+        <attr name="vcet_is_pwd" format="boolean" />
+        <!--密码模式时,圆的半径，默认是5dp-->
+        <attr name="vcet_pwd_radius" format="dimension|reference" />
+    </declare-styleable>
+    <attr name="VerifyCodeEditTextStyle" format="reference" />
+
+    <!-- PasswordEditText -->
+    <declare-styleable name="PasswordEditText">
+        <!--显示密码的图标资源-->
+        <attr name="pet_iconShow" format="reference" />
+        <!--隐藏密码的图标资源-->
+        <attr name="pet_iconHide" format="reference" />
+        <!--是否触摸显示密码-->
+        <attr name="pet_hoverShowsPw" format="boolean" />
+        <!--是否使用系统默认字体-->
+        <attr name="pet_nonMonospaceFont" format="boolean" />
+        <!--图标是否设置透明度, 默认是true-->
+        <attr name="pet_enableIconAlpha" format="boolean" />
+        <!--密码输入框文字的样式是否是“*”，默认是false-->
+        <attr name="pet_isAsteriskStyle" format="boolean" />
+    </declare-styleable>
+    <attr name="PasswordEditTextStyle" format="reference" />
+
+    <declare-styleable name="ClearEditText">
+        <!--清除按钮的图片资源-->
+        <attr name="cet_clearIcon" format="reference" />
+        <!--清除按钮的图片尺寸-->
+        <attr name="cet_clearIconSize" format="dimension" />
+    </declare-styleable>
+    <attr name="ClearEditTextStyle" format="reference" />
+
+    <!--ValidatorEditText-->
+    <declare-styleable name="ValidatorEditText">
+        <!--校验的正则表达式-->
+        <attr name="vet_regexp" format="string" />
+        <!--校验不通过的提示信息-->
+        <attr name="vet_errorMessage" format="string" />
+        <!--是否自动校验, 默认是true-->
+        <attr name="vet_autoValidate" format="boolean" />
+        <!--是否显示出错图标，默认true-->
+        <attr name="vet_show_errorIcon" format="boolean" />
+        <!--出错提示的图片资源-->
+        <attr name="vet_errorIcon" format="reference" />
+        <!--出错提示的图片尺寸-->
+        <attr name="vet_errorIconSize" format="dimension" />
+        <!--出错提示显示的位置-->
+        <attr name="vet_tipPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+    <attr name="ValidatorEditTextStyle" format="reference" />
+
+
+    <declare-styleable name="MultiLineEditText">
+        <!--最大输入文字的数目，默认240-->
+        <attr name="mlet_maxCount" format="integer" />
+        <!--是否忽略中英文的差异，默认true-->
+        <attr name="mlet_ignoreCnOrEn" format="boolean" />
+        <!--输入框提示文字-->
+        <attr name="mlet_hintText" format="string|reference" />
+        <!--输入框提示文字的颜色-->
+        <attr name="mlet_hintTextColor" format="color|reference" />
+        <!--输入框的padding， 默认10dp-->
+        <attr name="mlet_contentPadding" format="dimension" />
+        <!--输入框背景-->
+        <attr name="mlet_contentBackground" format="reference" />
+        <!--输入框的内容-->
+        <attr name="mlet_contentText" format="string|reference" />
+        <!--输入框文字的大小-->
+        <attr name="mlet_contentTextSize" format="dimension|reference" />
+        <!--输入框文字的颜色-->
+        <attr name="mlet_contentTextColor" format="color|reference" />
+        <!--输入框的高度，默认140dp-->
+        <attr name="mlet_contentViewHeight" format="dimension|reference" />
+        <!--输入框的高度是否是固定高度，默认是true-->
+        <attr name="mlet_isFixHeight" format="boolean" />
+        <!--统计数字显示剩余数目,默认false-->
+        <attr name="mlet_showSurplusNumber" format="boolean" />
+    </declare-styleable>
+    <attr name="MultiLineEditTextStyle" format="reference" />
+
+
+    <!--===============================ImageView======================================-->
+
+    <attr name="RadiusImageViewStyle" format="reference" />
+    <declare-styleable name="RadiusImageView">
+        <!--边框宽度，默认：0-->
+        <attr name="riv_border_width" format="dimension" />
+        <!--边框的颜色，默认：Color.GRAY-->
+        <attr name="riv_border_color" format="color" />
+        <!--选中时，覆盖在图片上的图层颜色，默认：Color.TRANSPARENT-->
+        <attr name="riv_selected_mask_color" format="color" />
+        <!--边框选中时的颜色，默认：Color.GRAY-->
+        <attr name="riv_selected_border_color" format="color" />
+        <!--边框选中时的宽度，默认：0-->
+        <attr name="riv_selected_border_width" format="dimension" />
+        <!--圆角的大小，默认0-->
+        <attr name="riv_corner_radius" format="dimension" />
+        <!--是否是椭圆形，默认：false-->
+        <attr name="riv_is_oval" format="boolean" />
+        <!--图片是否是圆形的，默认：false-->
+        <attr name="riv_is_circle" format="boolean" />
+        <!--图片是否可触摸选中，默认：true-->
+        <attr name="riv_is_touch_select_mode_enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BezierBannerView">
+        <attr name="bbv_selectedColor" format="color" />
+        <attr name="bbv_unSelectedColor" format="color" />
+        <attr name="bbv_selectedRadius" format="dimension" />
+        <attr name="bbv_unSelectedRadius" format="dimension" />
+        <attr name="bbv_spacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="NineGridImageView">
+        <!--单张图片的尺寸-->
+        <attr name="ngiv_singleImgSize" format="dimension" />
+        <!--图片的间隙，默认是0-->
+        <attr name="ngiv_imgGap" format="dimension" />
+        <!--最大的图片数，默认是9-->
+        <attr name="ngiv_maxSize" format="integer" />
+        <!--展示样式， 默认是grid-->
+        <attr name="ngiv_showStyle" format="enum">
+            <enum name="grid" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--IconImageView-->
+    <declare-styleable name="IconImageView">
+        <!--图标的资源-->
+        <attr name="iiv_icon_res" format="reference" />
+        <!--图标缩放的比例, 默认是0.5-->
+        <attr name="iiv_icon_scale" format="float" />
+        <!--图标是否显示, 默认是true-->
+        <attr name="iiv_is_show" format="boolean" />
+    </declare-styleable>
+
+    <!--CropImageView 图片裁剪工具-->
+    <declare-styleable name="CropImageView">
+        <!-- 网格线 -->
+        <attr name="civ_guidelines">
+            <enum name="on" value="2" />
+            <enum name="onTouch" value="1" />
+            <enum name="off" value="0" />
+        </attr>
+        <!-- 是否是固定比例裁剪 -->
+        <attr name="civ_fixAspectRatio" format="boolean" />
+        <!-- 宽度比例 -->
+        <attr name="civ_aspectRatioX" format="integer" />
+        <!-- 高度比例 -->
+        <attr name="civ_aspectRatioY" format="integer" />
+        <!-- 裁剪图片的资源 -->
+        <attr name="civ_imageResource" format="reference" />
+    </declare-styleable>
+
+    <!-- 图片编辑 -->
+    <declare-styleable name="PhotoEditorView">
+        <attr name="photo_src" format="integer" />
+    </declare-styleable>
+
+    <!--=============================Bar========================================-->
+
+    <declare-styleable name="CookieBar">
+        <!--CookieBar-->
+        <attr name="cookieTitleColor" format="color" />
+        <attr name="cookieMessageColor" format="color" />
+        <attr name="cookieActionColor" format="color" />
+        <attr name="cookieBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusView">
+        <!--完成状态的布局-->
+        <attr name="sv_complete" format="reference" />
+        <!--出错状态的布局-->
+        <attr name="sv_error" format="reference" />
+        <!--loading加载中状态的布局-->
+        <attr name="sv_loading" format="reference" />
+        <!--自定义状态的布局-->
+        <attr name="sv_custom" format="reference" />
+        <!--是否自动隐藏当是完成状态的时候， 默认true-->
+        <attr name="sv_dismissOnComplete" format="boolean" />
+    </declare-styleable>
+    <attr name="StatusViewStyle" format="reference" />
+
+    <!--============================TabBar=========================================-->
+
+    <declare-styleable name="EasyIndicator">
+        <!--指示器(整个Tab）的宽度，默认-1(MATCH_PARENT)为填充满-->
+        <attr name="indicator_width" format="dimension" />
+        <!--指示器的高度，默认45dp-->
+        <attr name="indicator_height" format="dimension" />
+
+        <!--指示器文字的大小，默认14sp-->
+        <attr name="indicator_textSize" format="dimension" />
+        <!--指示器选中时文字的大小，默认14sp-->
+        <attr name="indicator_select_textSize" format="dimension" />
+        <!--指示器选中时的背景颜色，默认R.attr.colorAccent-->
+        <attr name="indicator_selected_color" format="color" />
+        <!--指示器未选中时的背景颜色，默认黑色-->
+        <attr name="indicator_normal_color" format="color" />
+
+        <!--是否显示底部指示器，默认true-->
+        <attr name="indicator_line_show" format="boolean" />
+        <!--指示器底部的高度，默认3-->
+        <attr name="indicator_line_height" format="dimension" />
+        <!--指示器指示线的颜色，默认R.attr.colorAccent-->
+        <attr name="indicator_line_color" format="color" />
+
+        <!--指示器底部指示线的颜色，默认R.attr.xui_config_color_separator_dark-->
+        <attr name="indicator_bottom_line_color" format="color" />
+        <!--指示器底部指示线的高度，默认0-->
+        <attr name="indicator_bottom_line_height" format="dimension" />
+
+        <!--指示器垂直分割线的宽度，默认0-->
+        <attr name="indicator_vertical_line_w" format="dimension" />
+        <!--指示器垂直分割线的高度，默认0-->
+        <attr name="indicator_vertical_line_h" format="dimension" />
+        <!--指示器垂直分割线的颜色，默认R.attr.xui_config_color_separator_dark-->
+        <attr name="indicator_vertical_line_color" format="color" />
+    </declare-styleable>
+    <attr name="EasyIndicatorStyle" format="reference" />
+
+
+    <declare-styleable name="TabSegment">
+        <!--tab选中时的颜色，默认R.attr.colorAccent-->
+        <attr name="ts_selected_color" format="color" />
+        <!--tab未选中时的颜色，默认R.color.xui_config_color_gray_5-->
+        <attr name="ts_normal_color" format="color" />
+        <!--指示器的高度, 默认2dp-->
+        <attr name="ts_indicator_height" format="dimension" />
+        <!--是否显示指示器，默认true-->
+        <attr name="ts_has_indicator" format="boolean" />
+        <!--文字大小，默认16sp-->
+        <attr name="android:textSize" format="dimension" />
+        <!--指示器是否在顶端，默认false-->
+        <attr name="ts_indicator_top" format="boolean" />
+        <!--指示器的模式，默认fixed-->
+        <attr name="ts_mode" format="enum">
+            <enum name="scrollable" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+        <!--tab间的空隙，默认10dp-->
+        <attr name="ts_space" format="dimension" />
+        <!--图标的位置，默认left-->
+        <attr name="ts_icon_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <!--文字的样式-->
+        <attr name="ts_typeface_provider" format="string" />
+    </declare-styleable>
+    <attr name="TabSegmentStyle" format="reference" />
+
+    <declare-styleable name="VerticalTabLayout">
+        <!--指示器的颜色，默认R.attr.colorAccent-->
+        <attr name="vtl_indicator_color" format="color" />
+        <!--指示器的宽度，默认3dp-->
+        <attr name="vtl_indicator_width" format="dimension" />
+        <!--指示器圆角角度，默认0-->
+        <attr name="vtl_indicator_corners" format="dimension" />
+        <!--指示器的对齐方式，默认left-->
+        <attr name="vtl_indicator_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+            <enum name="fill" value="119" />
+        </attr>
+        <!--tab间的空隙，默认0-->
+        <attr name="vtl_tab_margin" format="dimension" />
+        <!--tab的模式，默认fixed-->
+        <attr name="vtl_tab_mode" format="enum">
+            <enum name="fixed" value="10" />
+            <enum name="scrollable" value="11" />
+        </attr>
+        <!--tab的高度，默认-2:WRAP_CONTENT-->
+        <attr name="vtl_tab_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TabControlView">
+        <!--文字字体的大小，默认14sp-->
+        <attr name="tcv_textSize" format="dimension" />
+        <!--没选中的文字颜色，默认#299EE3-->
+        <attr name="tcv_unselectedTextColor" format="reference" />
+        <!--选中的文字颜色， 默认Color.WHITE-->
+        <attr name="tcv_selectedTextColor" format="reference" />
+        <!--没选中的背景颜色， 默认Color.TRANSPARENT-->
+        <attr name="tcv_unselectedColor" format="reference" />
+        <!--选中的背景颜色， 默认#299EE3-->
+        <attr name="tcv_selectedColor" format="reference" />
+        <!--边框宽度，默认1dp-->
+        <attr name="tcv_strokeWidth" format="dimension" />
+        <!--选项卡间的padding-->
+        <attr name="tcv_item_padding" format="dimension" />
+        <!--选项卡水平间的padding-->
+        <attr name="tcv_item_padding_horizontal" format="dimension" />
+        <!--选项卡垂直间的padding-->
+        <attr name="tcv_item_padding_vertical" format="dimension" />
+        <!--选项卡中展示的内容-->
+        <attr name="tcv_items" format="reference" />
+        <!--选项卡中选中的内容（默认和展示的一样）-->
+        <attr name="tcv_values" format="reference" />
+        <!--是否等宽显示，默认false-->
+        <attr name="tcv_equalWidth" format="boolean" />
+        <!--是否伸展开，填充整个父布局，默认false-->
+        <attr name="tcv_stretch" format="boolean" />
+        <!--默认选中项的索引-->
+        <attr name="tcv_defaultSelection" format="integer" />
+    </declare-styleable>
+
+    <!--==============================Picker=======================================-->
+    <declare-styleable name="WheelView">
+        <attr name="wv_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="wv_textSize" format="dimension" />
+        <attr name="wv_textColorOut" format="color" />
+        <attr name="wv_textColorCenter" format="color" />
+        <attr name="wv_dividerColor" format="color" />
+        <attr name="wv_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+
+    <!--刻度尺-->
+    <attr name="RulerViewStyle" format="reference" />
+    <declare-styleable name="RulerView">
+        <!--尺子的高度, 默认50dp-->
+        <attr name="rv_rulerHeight" format="dimension" />
+        <!--尺子距离结果的高度,默认12.5-->
+        <attr name="rv_rulerToResultGap" format="dimension" />
+        <!--刻度间距, 默认10dp-->
+        <attr name="rv_scaleGap" format="dimension" />
+        <!--相邻2个刻度之间的数量， 默认1-->
+        <attr name="rv_scaleLimit" format="integer" />
+        <!--刻度数，默认10-->
+        <attr name="rv_scaleCount" format="integer" />
+        <!--默认选中的刻度，默认50-->
+        <attr name="rv_firstScale" format="float" />
+        <!--最大刻度，默认100-->
+        <attr name="rv_maxScale" format="integer" />
+        <!--最小刻度， 默认0-->
+        <attr name="rv_minScale" format="integer" />
+        <!--背景色，默认#fffcfffc-->
+        <attr name="rv_bgColor" format="color" />
+        <!--小刻度的颜色，默认#ff999999-->
+        <attr name="rv_smallScaleColor" format="color" />
+        <!--中刻度的颜色，默认#ff666666-->
+        <attr name="rv_midScaleColor" format="color" />
+        <!--大刻度的颜色，默认#ff50b586-->
+        <attr name="rv_largeScaleColor" format="color" />
+        <!--刻度数的颜色，默认#ff333333-->
+        <attr name="rv_scaleNumColor" format="color" />
+        <!--结果字体的颜色，默认#ff50b586-->
+        <attr name="rv_resultNumColor" format="color" />
+        <!--单位，默认kg-->
+        <attr name="rv_unit" format="string" />
+        <!--单位颜色，默认#ff50b586-->
+        <attr name="rv_unitColor" format="color" />
+        <!--小刻度的宽度，默认2dp-->
+        <attr name="rv_smallScaleStroke" format="dimension" />
+        <!--中刻度的宽度，默认3dp-->
+        <attr name="rv_midScaleStroke" format="dimension" />
+        <!--大刻度的宽度，默认5dp-->
+        <attr name="rv_largeScaleStroke" format="dimension" />
+        <!--结果字体大小，默认20sp-->
+        <attr name="rv_resultNumTextSize" format="dimension" />
+        <!--刻度字体大小，默认16sp-->
+        <attr name="rv_scaleNumTextSize" format="dimension" />
+        <!--单位字体大小，默认13sp-->
+        <attr name="rv_unitTextSize" format="dimension" />
+        <!--是否显示结果值，默认true-->
+        <attr name="rv_showScaleResult" format="boolean" />
+        <!--背景是否圆角，默认true-->
+        <attr name="rv_isBgRoundRect" format="boolean" />
+        <!--圆角大小，默认10dp-->
+        <attr name="rv_roundRadius" format="dimension" />
+    </declare-styleable>
+
+    <!--DropDownMenu 下拉选择菜单-->
+    <declare-styleable name="DropDownMenu">
+        <!--下拉选择菜单的内容布局-->
+        <attr name="ddm_contentLayoutId" format="reference" />
+        <!--菜单垂直分割线的颜色，默认R.attr.xui_config_color_separator_dark-->
+        <attr name="ddm_dividerColor" format="color" />
+        <!--菜单垂直分割线的宽度， 默认0.5dp-->
+        <attr name="ddm_dividerWidth" format="dimension" />
+        <!--菜单垂直分割线的Margin， 默认10dp-->
+        <attr name="ddm_dividerMargin" format="dimension" />
+        <!--菜单底线的颜色, 默认R.attr.xui_config_color_separator_light-->
+        <attr name="ddm_underlineColor" format="color" />
+        <!--菜单底线的高度， 默认1dp-->
+        <attr name="ddm_underlineHeight" format="dimension" />
+        <!--半透明遮罩颜色, 默认#88888888-->
+        <attr name="ddm_maskColor" format="color" />
+        <!--菜单文字的字体大小，默认14sp-->
+        <attr name="ddm_menuTextSize" format="dimension" />
+        <!--菜单文字水平padding，默认5dp-->
+        <attr name="ddm_menuTextPaddingHorizontal" format="dimension" />
+        <!--菜单文字垂直padding，默认12dp-->
+        <attr name="ddm_menuTextPaddingVertical" format="dimension" />
+        <!--菜单文字选中的颜色，默认R.attr.colorAccent-->
+        <attr name="ddm_menuTextSelectedColor" format="color" />
+        <!--菜单文字未选中的颜色，默认R.attr.xui_config_color_content_text-->
+        <attr name="ddm_menuTextUnselectedColor" format="color" />
+        <!--菜单选择时的图标， 默认R.drawable.ddm_ic_arrow_up-->
+        <attr name="ddm_menuSelectedIcon" format="reference" />
+        <!--菜单未选择时的图标, 默认R.drawable.ddm_ic_arrow_down-->
+        <attr name="ddm_menuUnselectedIcon" format="reference" />
+        <!--菜单的背景颜色，默认Color.WHITE-->
+        <attr name="ddm_menuBackgroundColor" format="color" />
+        <!--选择菜单的高度/屏幕高度 占比， 默认0.5-->
+        <attr name="ddm_menuHeightPercent" format="float" />
+    </declare-styleable>
+    <attr name="DropDownMenuStyle" format="reference" />
+
+    <!--=====================================================================-->
+    <!--MaterialSearchView-->
+    <declare-styleable name="MaterialSearchView">
+        <!--搜索框背景资源的id-->
+        <attr name="msv_searchBackground" format="integer" />
+        <!--语音按钮图标的资源id-->
+        <attr name="msv_searchVoiceIcon" format="integer" />
+        <!--清空按钮图标的资源id-->
+        <attr name="msv_searchClearIcon" format="integer" />
+        <!--返回按钮图标的资源id-->
+        <attr name="msv_searchBackIcon" format="integer" />
+        <!--搜索提示图标的资源id-->
+        <attr name="msv_searchSuggestionIcon" format="integer" />
+        <!--搜索提示的背景资源的id-->
+        <attr name="msv_searchSuggestionBackground" format="integer" />
+        <!--搜索输入框提示信息-->
+        <attr name="android:hint" />
+        <!--搜索输入框文字颜色-->
+        <attr name="android:textColor" />
+        <!--搜索输入框提示文字颜色-->
+        <attr name="android:textColorHint" />
+        <!--搜索输入框输入的类型-->
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <!--=====================================================================-->
+    <!--XUIKeyboardScrollView-->
+    <declare-styleable name="XUIKeyboardScrollView">
+        <!--键盘弹出后,是否自动滚动，默认false-->
+        <attr name="ksv_auto_scroll" format="boolean" />
+        <!--键盘弹出后，滚动的高度-->
+        <attr name="ksv_scroll_height" format="dimension" />
+        <!--键盘弹出后，滚动的延迟-->
+        <attr name="ksv_scroll_delay" format="integer" />
+        <!--滚动是否隐藏键盘, 默认true-->
+        <attr name="ksv_scroll_hide" format="boolean" />
+    </declare-styleable>
+
+    <!--XUIWrapContentListView-->
+    <declare-styleable name="XUIWrapContentListView">
+        <!--设置listView的最大高度-->
+        <attr name="wclv_max_height" format="dimension" />
+    </declare-styleable>
+
+    <!--XUIWrapContentExpandableListView-->
+    <declare-styleable name="XUIWrapContentExpandableListView">
+        <!--设置listView的最大高度-->
+        <attr name="wcelv_max_height" format="dimension" />
+    </declare-styleable>
+
+    <!--XUIWrapContentScrollView-->
+    <declare-styleable name="XUIWrapContentScrollView">
+        <!--设置ScrollView的最大高度-->
+        <attr name="wcsv_max_height" format="dimension" />
+    </declare-styleable>
+
+
+    <!--===========================XUIGroupListView==========================================-->
+    <declare-styleable name="XUIGroupListView">
+        <attr name="xui_separatorStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="none" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="XUICommonListItemView">
+        <attr name="xui_orientation" />
+        <attr name="xui_accessory_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="chevron" value="1" />
+            <enum name="switcher" value="2" />
+            <enum name="custom" value="3" />
+        </attr>
+        <attr name="xui_commonList_titleColor" format="color" />
+        <attr name="xui_commonList_detailColor" format="color" />
+    </declare-styleable>
+    <attr name="XUIGroupListViewStyle" format="reference" />
+    <attr name="XUICommonListItemViewStyle" format="reference" />
+    <attr name="XUIGroupListSectionViewStyle" format="reference" />
+    <attr name="XUITipPointStyle" format="reference" />
+    <attr name="XUITipNewStyle" format="reference" />
+
+</resources>

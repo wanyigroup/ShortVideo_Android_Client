@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xuexiang.xui.widget.searchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:msv_searchBackground="@color/black"
+        app:msv_searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        />
+    <View
+        android:layout_marginTop="?attr/xui_actionbar_height"
+        style="@style/horizontal_underline"
+        >
+    </View>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video_smart_refresh"
+        android:layout_marginTop="?attr/xui_actionbar_height"
+        android:orientation="vertical"
+        >
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.scwang.smartrefresh.header.MaterialHeader>
+
+        <com.scwang.smartrefresh.layout.footer.FalsifyFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.scwang.smartrefresh.layout.footer.FalsifyFooter>
+
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_recycler"
+            app:layout_empty="@layout/msv_layout_empty_view"
+            >
+
+        </com.jude.easyrecyclerview.EasyRecyclerView>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/xui_actionbar_height"
+            android:id="@+id/search_linear"
+            android:orientation="vertical"
+            >
+           <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:id ="@+id/clear_history"
+            style="@style/InfoItem.Account"
+            app:sLeftIconRes="@mipmap/mine_ic_history"
+            app:sLeftIconWidth="@dimen/dp_20"
+            app:sLeftIconHeight="@dimen/dp_20"
+            app:sLeftTextString="历史搜索"
+            app:sRightTextString="清除历史"
+           >
+
+          </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/history_search"
+             android:paddingLeft="?attr/xui_config_content_spacing_horizontal"
+             android:paddingRight="?attr/xui_config_content_spacing_horizontal"
+             >
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+          <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_40"
+              style="@style/InfoItem.Account"
+              app:sLeftIconRes="@mipmap/search_ic_hot"
+              app:sLeftIconWidth="@dimen/dp_20"
+              app:sLeftIconHeight="@dimen/dp_20"
+              app:sLeftTextString="搜索趋势"
+              >
+
+          </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/tendency_search"
+              >
+
+          </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+</FrameLayout>

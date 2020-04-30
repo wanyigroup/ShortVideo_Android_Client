@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml:1:1-2:45
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml:1:1-2:45
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml:1:1-2:45
+	package
+		ADDED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml:2:5-42
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+		ADDED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+		ADDED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml
+		INJECTED from D:\githubFrame\uiframe\dkplayer-players\ijk\src\main\AndroidManifest.xml

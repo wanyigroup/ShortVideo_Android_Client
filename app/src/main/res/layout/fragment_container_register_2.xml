@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/Container.Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/placeholder_photo"
+            style="@style/user_photo"
+            >
+
+        </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            android:textColor="?attr/xui_config_color_content_text"
+            android:text="邮箱验证"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_20"
+            >
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:hint="请输入手机号码"
+                android:id="@+id/input_phone"
+                app:met_floatingLabelText="手机号码"
+                app:met_clearButton="true"
+                android:visibility="gone"
+                style="@style/input_edit">
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                android:id="@+id/input_code"
+                style="@style/input_edit"
+                android:hint="请输入验证码"
+                app:met_floatingLabelText="验证码"
+                app:met_clearButton="true"
+                >
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.button.CountDownButton
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/TextStyle.Explain.Login"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:text="获取验证码"
+                android:id="@+id/verify_email"
+                >
+            </com.xuexiang.xui.widget.button.CountDownButton>
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_marginTop="@dimen/dp_30"
+            android:id="@+id/right_bind"
+            style="@style/CardButton.Large"
+            android:text="确定"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+            <com.xuexiang.xui.widget.button.ButtonView
+                android:layout_marginTop="@dimen/dp_30"
+                android:id="@+id/no_bind"
+                style="@style/CardButton.Large"
+                android:text="暂不绑定"
+                android:visibility="gone"
+                >
+
+            </com.xuexiang.xui.widget.button.ButtonView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

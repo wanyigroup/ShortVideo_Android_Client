@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/Container.Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/placeholder_photo"
+            style="@style/user_photo"
+            >
+
+        </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            android:textColor="?attr/xui_config_color_title_text"
+            android:text="注册账户"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_20"
+            >
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:hint="请输入用户名(5-17位字符)"
+                app:met_floatingLabelText="用户名"
+                style="@style/input_edit"
+                android:id="@+id/input_username"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/input_edit"
+                android:hint="请输入密码(6-16位字符)"
+                android:inputType="textPassword"
+                app:met_floatingLabelText="密码"
+                android:id="@+id/input_psw"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/input_edit"
+                android:hint="确认密码，请重新输入密码"
+                android:inputType="textPassword"
+                app:met_floatingLabelText="密码"
+                android:id="@+id/input_psw_again"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/input_edit"
+                android:hint="请输入您的邮箱"
+                app:met_floatingLabelText="邮箱"
+                android:id="@+id/input_email"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/input_edit"
+                android:hint="请输入您的手机号"
+                app:met_floatingLabelText="手机号"
+                android:id="@+id/input_phone"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+        </LinearLayout>
+
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_marginTop="@dimen/dp_30"
+            style="@style/CardButton.Large"
+            android:id="@+id/step_next"
+            android:text="注册"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:id="@+id/explain_register"
+            style="@style/TextStyle.Explain.Login">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

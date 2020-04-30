@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/smart_refresh"
+        >
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.scwang.smartrefresh.header.MaterialHeader>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="none"
+         android:id="@+id/scrollView"
+     >
+
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MineHeader"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_20"
+        >
+       <com.xuexiang.xui.widget.imageview.RadiusImageView
+           android:src="@mipmap/placeholder_photo"
+           android:id="@+id/radius_image"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           style="@style/user_photo"
+           >
+       </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_30"
+            android:id="@+id/mine_bt_load"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:textSolidColor="@color/xui_config_color_red"
+            app:textRadius="@dimen/dp_15"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:id="@+id/assist_top_line"
+            android:layout_marginLeft="@dimen/dp_10"
+            app:layout_constraintTop_toTopOf="@+id/radius_image"
+            app:layout_constraintBottom_toBottomOf="@id/radius_image"
+            app:layout_constraintLeft_toRightOf="@id/radius_image"
+            >
+
+        </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="?attr/xui_config_color_title_text"
+                android:textSize="@dimen/dp_15"
+                android:id="@+id/user_name"
+                android:text="未登录"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/assist_top_line"
+                app:layout_constraintBottom_toTopOf="@id/assist_top_line"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/assist_top_line"
+                app:layout_constraintTop_toBottomOf="@id/assist_top_line"
+                >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:textSize="?attr/xui_config_size_content_text"
+                   android:textColor="?attr/xui_config_color_content_text"
+                   android:text="UID："
+                   android:textStyle="bold"
+                   >
+               </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="?attr/xui_config_size_content_text"
+                    android:textColor="?attr/xui_config_color_content_text"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:text="0"
+                    android:id="@+id/user_id"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dp_80"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/radius_image"
+             app:cardElevation="@dimen/dp_5"
+             app:cardCornerRadius="@dimen/dp_4"
+             app:cardBackgroundColor="?attr/container_block_bgColor"
+             >
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:paddingStart="?attr/xui_config_content_spacing_horizontal"
+                 android:paddingEnd="?attr/xui_config_content_spacing_horizontal"
+                 >
+                 <com.xuexiang.xui.widget.imageview.RadiusImageView
+                     android:layout_width="@dimen/dp_45"
+                     android:layout_height="@dimen/dp_45"
+                     app:layout_constraintLeft_toLeftOf="parent"
+                     app:layout_constraintTop_toTopOf="parent"
+                     app:layout_constraintBottom_toBottomOf="parent"
+                     app:riv_is_circle="true"
+                     android:id="@+id/vip_place"
+                     android:src="@mipmap/ic_free_icon"
+                     >
+                 </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+                 <com.xuexiang.xui.widget.button.ButtonView
+                     android:layout_width="@dimen/dp_70"
+                     android:layout_height="@dimen/dp_30"
+                     app:textRadius="@dimen/dp_15"
+                     app:textSolidColor="@color/free_color"
+                     app:textSelectedTextColor="@color/cp_color_gray"
+                     android:textColor="@color/xui_config_color_white"
+                     app:layout_constraintRight_toRightOf="parent"
+                     app:layout_constraintTop_toTopOf="@id/vip_place"
+                     app:layout_constraintBottom_toBottomOf="@id/vip_place"
+                     android:text="@string/mine_level_btn_txt"
+                     android:gravity="center"
+                     android:id="@+id/skip_place"
+                     >
+                 </com.xuexiang.xui.widget.button.ButtonView>
+
+                 <View
+                     android:layout_width="0dp"
+                     android:layout_height="1dp"
+                     android:layout_marginLeft="@dimen/dp_10"
+                     app:layout_constraintLeft_toRightOf="@id/vip_place"
+                     app:layout_constraintRight_toRightOf="@id/skip_place"
+                     app:layout_constraintTop_toTopOf="@id/vip_place"
+                     app:layout_constraintBottom_toBottomOf="@id/vip_place"
+                     android:id="@+id/place_center"
+                     >
+                 </View>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintLeft_toLeftOf="@id/place_center"
+                     app:layout_constraintBottom_toTopOf="@id/place_center"
+                     android:textSize="?attr/xui_config_size_content_text"
+                     android:textColor="@color/free_color"
+                     android:text="@string/mine_level_txt"
+                     android:id="@+id/role_title"
+                     >
+                 </TextView>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintLeft_toLeftOf="@id/place_center"
+                     app:layout_constraintTop_toBottomOf="@id/place_center"
+                     android:textSize="?attr/xui_config_size_explain_text"
+                     android:textColor="?attr/xui_config_color_explain_text"
+                     android:text="@string/mine_level_tip_txt"
+                     android:id="@+id/role_content"
+                     >
+                 </TextView>
+             </androidx.constraintlayout.widget.ConstraintLayout>
+         </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_20"
+            app:cardElevation="@dimen/dp_5"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:cardBackgroundColor="?attr/container_block_bgColor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/coupon_container"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            >
+                         <ImageView
+                            android:layout_width="?attr/icon_normal_width"
+                            android:layout_height="?attr/icon_normal_height"
+                            android:src="@mipmap/ic_voucher"
+                            android:layout_gravity="center"
+                            >
+                         </ImageView>
+                         <TextView
+                             android:layout_marginTop="@dimen/dp_4"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:textColor="?attr/xui_config_color_content_text"
+                             android:textSize="?attr/xui_config_size_content_text"
+                             android:text="卡券兑换"
+                             >
+
+                         </TextView>
+                        </LinearLayout>
+
+                </RelativeLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/like_container"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="?attr/icon_normal_width"
+                                android:layout_height="?attr/icon_normal_height"
+                                android:src="@mipmap/mine_ic_like"
+                                android:layout_gravity="center"
+                                >
+                            </ImageView>
+                            <TextView
+                                android:layout_marginTop="@dimen/dp_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="?attr/xui_config_color_content_text"
+                                android:textSize="?attr/xui_config_size_content_text"
+                                android:text="我的喜欢"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/cache_container"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="?attr/icon_normal_width"
+                                android:layout_height="?attr/icon_normal_height"
+                                android:src="@mipmap/mine_ic_cache"
+                                android:layout_gravity="center"
+                                >
+                            </ImageView>
+                            <TextView
+                                android:layout_marginTop="@dimen/dp_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="?attr/xui_config_color_content_text"
+                                android:textSize="?attr/xui_config_size_content_text"
+                                android:text="离线缓存"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+                <com.xuexiang.xui.widget.button.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/history_container"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="?attr/icon_normal_width"
+                                android:layout_height="?attr/icon_normal_height"
+                                android:src="@mipmap/mine_ic_history"
+                                android:layout_gravity="center"
+                                >
+                            </ImageView>
+                            <TextView
+                                android:layout_marginTop="@dimen/dp_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="?attr/xui_config_color_content_text"
+                                android:textSize="?attr/xui_config_size_content_text"
+                                android:text="历史记录"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </com.xuexiang.xui.widget.button.RippleView>
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.xuexiang.xui.widget.banner.widget.banner.SimpleImageBanner
+        android:id="@+id/banner_image"
+        style="@style/BannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        app:bb_scale="0.5"
+        app:bb_indicatorStyle="CORNER_RECTANGLE"
+        app:bb_isTitleShow="true"
+        android:visibility="gone"
+        >
+
+    </com.xuexiang.xui.widget.banner.widget.banner.SimpleImageBanner>
+
+    <View
+        style="@style/horizontal_underline"
+        >
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical"
+        >
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id ="@+id/self_data"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="个人资料"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id ="@+id/coupon_exchange"
+            android:visibility="gone"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="卡券兑换"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sRightTextString="仅vip用户可设置"
+            app:sLeftTextString="高级设置"
+            android:id="@+id/high_setup"
+            android:visibility="gone"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id="@+id/user_security"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="账号和安全"
+            android:visibility="gone"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="@string/account_wallet"
+            android:id="@+id/my_wallet2"
+            android:visibility="gone"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="系统设置"
+            android:visibility="gone"
+            >
+
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id="@+id/clear_cache"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="缓存清理"
+            app:sRightTextString="0M"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id="@+id/log_out"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="注销登录"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="应用推荐"
+            android:id="@+id/app_recommend"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sRightTvDrawableRight="@mipmap/ic_go_arrow"
+            app:sRightTvDrawableWidth="?attr/mine_drawable_width"
+            app:sRightTvDrawableHeight="?attr/mine_drawable_height"
+            app:sLeftTextString="意见反馈"
+            android:id="@+id/app_feedback"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            android:id="@+id/btn_upgrade"
+            app:sLeftTextString="版本更新"
+            app:sRightTextString="升级"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+     </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

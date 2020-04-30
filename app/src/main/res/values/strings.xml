@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">uiframe</string>
+    <string name="pattern_email">/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/</string>
+    <string name="explain_register"> <Data><![CDATA[
+        <b>点击"注册",即同意</b><br/>
+        <font color="#ff0000"> 《用户注册协议》</font><br/>
+        ]]></Data> </string>
+    <string name="tab1">搜索</string>
+    <string name="tab2">同城</string>
+    <string name="tab3">首页</string>
+    <string name="tab4">消息</string>
+    <string name="tab5">我的</string>
+    <string name="lock_tip">请先解锁屏幕！</string>
+    <string name="str_tiktok_3">抖音 (ViewPager2)</string>
+    <string name="account_balance">\t账户余额\t%s</string>
+    <string name="account_vip">有效期：%s</string>
+    <string name="account_wallet">余额充值</string>
+    <string name="network_content">您当前为非WIFI环境\n是否使用流量观看视频</string>
+    <string name="network_pause">暂停观看</string>
+    <string name="network_ignore">土豪无视</string>
+    <string name="network_error">网络连接失败</string>
+    <string name="fullscreen_no_data">暂无数据</string>
+    <string name="fullscreen_no_more">没有更多了</string>
+    <string name="fullscreen_video_exist">视频已存在</string>
+    <string name="fullscreen_video_download">视频正在后台缓存...请在个人中心 离线缓存中查看</string>
+    <string name="fullscreen_refuse_download">权限不足,下载功能无法使用</string>
+    <string name="mine_level_txt">未加入VIP会员</string>
+    <string name="mine_level_tip_txt">立即加入获得更好的体验</string>
+    <string name="mine_level_btn_txt">开通</string>
+    <string name="dialog_tip">提示</string>
+    <string name="dialog_load_content">请先登录后观看</string>
+    <string name="dialog_load_button">登录</string>
+    <string name="dialog_upgrade_content">请升级账户后观看</string>
+    <string name="dialog_upgrade_button">升级</string>
+
+
+
+</resources>

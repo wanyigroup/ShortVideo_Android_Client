@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="为了保证您的账户安全，请验证身份验证"
+            android:textColor="?attr/xui_config_color_explain_text"
+            android:textSize="?attr/xui_config_size_explain_text"
+            android:layout_marginTop="@dimen/dp_40"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+8613255***33"
+            android:id="@+id/safe_phone"
+            android:textColor="?attr/xui_config_color_content_text"
+            android:textSize="?attr/xui_config_size_title_text"
+            android:layout_marginTop="@dimen/dp_40"
+            >
+        </TextView>
+
+        <com.xuexiang.xui.widget.button.CountDownButton
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_gravity="center"
+            style="@style/Button.Blue"
+            android:id="@+id/bt_countdown4"
+            android:text="获取验证码" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

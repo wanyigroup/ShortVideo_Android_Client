@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_70"
+        >
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="账户密码"
+            app:sRightTextString="请设置密码"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="手机号码"
+            app:sRightTextString="+8613844556655"
+            android:id="@+id/phone_text_view"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="邮箱账户"
+            app:sRightTextString="test@qq.com"
+            >
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

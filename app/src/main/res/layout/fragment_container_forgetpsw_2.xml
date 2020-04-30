@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/Container.Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+        android:layout_marginTop="@dimen/dp_10"
+        style="@style/input_edit"
+        android:hint="请输入新密码"
+        app:met_floatingLabelText="新密码"
+        app:met_passWordButton="true"
+        >
+       </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/input_edit"
+            android:hint="请再次输入新密码"
+            app:met_errorMessage="密码错误"
+            app:met_floatingLabelText="新密码"
+            app:met_passWordButton="true"
+            >
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_marginTop="@dimen/dp_30"
+            style="@style/CardButton.Large"
+            android:text="确定"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+    </LinearLayout>
+</LinearLayout>

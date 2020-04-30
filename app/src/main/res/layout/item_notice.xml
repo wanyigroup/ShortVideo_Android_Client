@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10"
+    >
+
+    <TextView
+        style="@style/TextStyle.Content"
+        android:id="@+id/tv_context"
+        >
+    </TextView>
+
+    <TextView
+        style="@style/TextStyle.Explain"
+        android:layout_margin="@dimen/dp_5"
+        android:autoLink="web"
+        android:id="@+id/tv_explain"
+        >
+    </TextView>
+
+
+
+</LinearLayout>

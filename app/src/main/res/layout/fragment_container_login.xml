@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/Container.Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/placeholder_photo"
+            android:visibility="gone"
+            style="@style/user_photo"
+            >
+
+        </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            android:textColor="?attr/xui_config_color_title_text"
+            android:text="账号登录"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_20"
+            >
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:hint="请输入邮箱账号"
+                android:id="@+id/input_email"
+                app:met_floatingLabelText="邮箱"
+                app:met_clearButton="true"
+                style="@style/input_edit">
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+            <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="请输入密码"
+                android:id="@+id/input_psw"
+                style="@style/input_edit"
+                app:met_floatingLabelText="密码"
+                app:met_passWordButton="true"
+                >
+
+            </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+
+        </LinearLayout>
+
+               <TextView
+                   android:layout_marginTop="@dimen/dp_10"
+                   style="@style/TextStyle.Explain.Login"
+                   android:layout_gravity="right"
+                   android:text="忘记密码"
+                   android:id="@+id/psw_forget"
+                   >
+               </TextView>
+
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_marginTop="@dimen/dp_30"
+            android:id="@+id/input_login"
+            style="@style/CardButton.Large"
+            android:text="登 录"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

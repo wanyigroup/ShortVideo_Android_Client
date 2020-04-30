@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/iv_icon"
+        app:riv_is_circle="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/placeholder_photo"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小可爱"
+        android:textColor="#FF666666"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈哈哈哈哈哈哈哈"
+        android:textColor="#FF333333"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="2019-01-01"
+        android:textColor="#FF333333"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/tv_context"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

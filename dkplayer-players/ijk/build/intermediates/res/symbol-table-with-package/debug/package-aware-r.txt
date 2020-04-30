@@ -1,0 +1,2 @@
+com.dueeeke.videoplayer.ijk
+string ijkplayer_dummy

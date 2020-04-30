@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Container"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="?attr/xui_config_size_title_text"
+            android:textColor="?attr/xui_config_color_title_text"
+            android:text="高级设置"
+            >
+
+        </TextView>
+
+        <View
+            style="@style/horizontal_underline"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            ></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="?attr/xui_config_size_explain_text"
+            android:textColor="?attr/xui_config_color_explain_text"
+            android:text="仅VIP会员可在此设置,非VIP设置不会生效"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_45"
+            >
+            <LinearLayout style="@style/config_linear">
+                <TextView
+                    android:text="播放格式"
+                    style="@style/config_title">
+                </TextView>
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:text="HLS格式"
+                    android:layout_width="@dimen/dp_140"
+                    android:id="@+id/play_format"
+                    style="@style/config_spinner">
+
+                </com.jaredrummler.materialspinner.MaterialSpinner>
+
+            </LinearLayout>
+            <View
+                style="@style/horizontal_underline"></View>
+            <LinearLayout style="@style/config_linear">
+                <TextView
+                    android:text="线路选择"
+                    style="@style/config_title">
+                </TextView>
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:text="自动判断"
+                    android:layout_width="@dimen/dp_140"
+                    android:id="@+id/channel_select"
+                    style="@style/config_spinner">
+
+                </com.jaredrummler.materialspinner.MaterialSpinner>
+
+            </LinearLayout>
+            <View
+                style="@style/horizontal_underline"></View>
+            <LinearLayout style="@style/config_linear">
+                <TextView
+                    android:text="线路测试"
+                    style="@style/config_title">
+                </TextView>
+
+
+            </LinearLayout>
+            <View
+                style="@style/horizontal_underline"></View>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

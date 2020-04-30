@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/message_title_height"
+        >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/center_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+        </View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/interactive_message"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/center_line">
+            <ImageView style="@style/homepage_message_title_image"
+                android:src="@mipmap/message_ic_note"
+                >
+
+            </ImageView>
+            <TextView
+                android:text="互动消息"
+                style="@style/homepage_message_title_txt">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/system_remind"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/center_line"
+            app:layout_constraintRight_toRightOf="parent">
+            <ImageView style="@style/homepage_message_title_image"
+                android:src="@mipmap/message_ic_remind"
+                >
+
+            </ImageView>
+            <TextView
+                android:text="系统提醒"
+                style="@style/homepage_message_title_txt">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+     style="@style/horizontal_underline"
+     android:visibility="gone">
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/container_block_divider_height"
+        android:visibility="gone"
+        >
+    </View>
+
+   <RelativeLayout
+       style="@style/Container.Header"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:text="消息"
+           android:textColor="?attr/xui_config_color_content_text"
+           android:textSize="?attr/xui_config_size_content_text"
+           >
+       </TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:text="新消息"
+           android:textColor="?attr/remind_color"
+           android:textSize="?attr/xui_config_size_content_text"
+           >
+       </TextView>
+   </RelativeLayout>
+
+    <View
+      style="@style/horizontal_underline"></View>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/container_block_bgColor"
+        android:id="@+id/smart_refresh_layout"
+        >
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.scwang.smartrefresh.header.MaterialHeader>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_message"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.Item"
+    >
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        style="@style/notice_photo"
+        android:src="@mipmap/ic_trumpet"
+        android:id="@+id/announcement_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    </com.xuexiang.xui.widget.imageview.RadiusImageView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.1dp"
+        android:id="@+id/centerDot"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@id/announcement_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    </View>
+
+    <com.xuexiang.xui.widget.textview.autofit.AutoFitTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="系统消息"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:id="@+id/announcement_title"
+        android:textSize="?attr/xui_config_size_content_text"
+        android:textColor="?attr/xui_config_color_content_text"
+        android:layout_marginBottom="@dimen/dp_5"
+        app:layout_constraintLeft_toRightOf="@id/announcement_photo"
+        app:layout_constraintRight_toLeftOf="@id/announcementTime"
+        app:layout_constraintTop_toTopOf="@id/announcement_photo"
+        app:layout_constraintBottom_toBottomOf="@id/centerDot"
+        >
+    </com.xuexiang.xui.widget.textview.autofit.AutoFitTextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/announcement_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="2019-05-21 13:05:56"
+        android:id="@+id/announcementTime"
+        android:textSize="?attr/xui_config_size_explain_text"
+        android:textColor="?attr/xui_config_color_explain_text"
+        >
+    </TextView>
+
+    <com.xuexiang.xui.widget.textview.autofit.AutoFitTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="?attr/xui_config_color_explain_text"
+        android:textSize="?attr/xui_config_size_explain_text"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="APP今天又更新了"
+        app:layout_constraintLeft_toLeftOf="@id/announcement_title"
+        app:layout_constraintRight_toRightOf="@id/announcementTime"
+        app:layout_constraintTop_toTopOf="@id/centerDot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:aftv_enable="false"
+        app:aftv_minTextSize="@dimen/dp_13"
+        android:id="@+id/announcementContent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        >
+    </com.xuexiang.xui.widget.textview.autofit.AutoFitTextView>
+
+    <View
+        android:layout_width="@dimen/dp_5"
+        android:layout_height="@dimen/dp_5"
+        android:background="@drawable/circle_dot"
+        android:id="@+id/center_dot"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></View>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

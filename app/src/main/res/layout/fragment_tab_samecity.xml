@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/xui_actionbar_height"
+        android:background="?attr/xui_actionbar_color"
+        style="@style/Container"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            >
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="?attr/xui_actionbar_action_text_size"
+                android:textColor="?attr/xui_actionbar_text_color"
+                android:text="当前城市:"
+                >
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaTextView>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="?attr/xui_actionbar_action_text_size"
+                android:textColor="?attr/xui_actionbar_text_color"
+                android:text="北京"
+                android:id="@+id/city_name"
+                >
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaTextView>
+
+        </LinearLayout>
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="?attr/xui_actionbar_action_text_size"
+            android:textColor="?attr/xui_actionbar_text_color"
+            android:text="选择城市"
+            android:id="@+id/city_select"
+            >
+
+        </com.xuexiang.xui.widget.alpha.XUIAlphaTextView>
+
+    </RelativeLayout>
+
+    <View
+       style="@style/horizontal_underline"
+        >
+    </View>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.wanyi.uiframe.dkplayer.fragment.factorylist.SameCityTikTokListFragment"
+        android:layout_marginTop="@dimen/dp_5"
+        android:id = "@+id/list_fragment"
+        >
+    </fragment>
+
+</LinearLayout>

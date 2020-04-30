@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tv_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <include
+        android:id="@+id/commit"
+        layout="@layout/dialog_type4"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_shape2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_gray_light"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_context"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tv_send"
+            android:background="@drawable/shape_gray"
+            android:gravity="center_vertical"
+            android:hint="发表评论"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/tv_send"
+            android:src="@drawable/face"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rec_yellow_type1"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="?attr/xui_config_color_content_text"
+            android:textSize="12dp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

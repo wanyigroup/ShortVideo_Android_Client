@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dkplayer.activity.tiktok.">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.wanyi.uiframe.dkplayer.fragment.SearchTikTokFullFragment"
+        android:id="@+id/fullscreen"
+        >
+    </fragment>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/xui_actionbar_height"
+        >
+
+        <ImageView
+            style="@style/TopIconImage"
+            android:id="@+id/icon_back"
+            android:clickable="true"
+            android:layout_marginLeft="?attr/xui_config_content_spacing_horizontal"
+            android:src="@drawable/xui_ic_navigation_back_white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

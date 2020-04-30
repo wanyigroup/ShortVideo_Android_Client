@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Container"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            app:cardBackgroundColor="?attr/container_block_bgColor"
+            android:padding="@dimen/dp_20"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_50"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="卡券兑换中心"
+                    android:textColor="?attr/xui_config_color_title_text"
+                    android:textSize="?attr/xui_config_size_title_text"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+                <View
+                   style="@style/horizontal_underline"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    >
+                </View>
+                <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                    android:id="@+id/input_card"
+                    style="@style/input_edit"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="请输入卡号"
+                    app:met_clearButton="true"
+                    app:met_floatingLabelText="卡号"
+                    >
+
+                </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+                <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    style="@style/input_edit"
+                    app:met_clearButton="true"
+                    app:met_floatingLabelText="密码"
+                     />
+
+                <com.xuexiang.xui.widget.button.ButtonView
+                    style="@style/CardButton"
+                    android:layout_width="?attr/xui_btn_view_width"
+                    android:layout_height="?attr/xui_btn_view_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:text="确认兑换"
+                    android:gravity="center"
+                    android:id="@+id/bt_card"
+                    >
+
+                </com.xuexiang.xui.widget.button.ButtonView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/xui_config_simple_list_item_height"
+                    android:gravity="left|center"
+                    android:textColor="?attr/xui_config_color_explain_text"
+                    android:textSize="?attr/xui_config_size_explain_text"
+                    android:text="输入您获得得兑换卡，卡号密码必须输入正确方可兑换成功"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/xui_config_simple_list_item_height"
+                    android:gravity="left|center"
+                    android:textColor="?attr/xui_config_color_explain_text"
+                    android:textSize="?attr/xui_config_size_explain_text"
+                    android:text="重复输入多次错误信息可能导致您的账号被封禁"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/xui_config_simple_list_item_height"
+                    android:gravity="left|center"
+                    android:textColor="?attr/remind_color"
+                    android:textSize="?attr/xui_config_size_explain_text"
+                    android:text="一旦兑换成功，该操作不可以撤销"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

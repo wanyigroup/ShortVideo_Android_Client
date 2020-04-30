@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homepage_bottom_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/bottom_placeholder"
+            >
+
+        </View>
+
+        <com.wanyi.uiframe.component.NoScrollViewPager
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_placeholder">
+
+        </com.wanyi.uiframe.component.NoScrollViewPager>
+
+        <com.flyco.tablayout.CommonTabLayout
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/mTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homepage_bottom_height"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            app:tl_indicator_style="TRIANGLE"
+            app:tl_iconVisible="false"
+            app:tl_indicator_corner_radius="1.5dp"
+            app:tl_indicator_height="0dp"
+            app:tl_textsize="15sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

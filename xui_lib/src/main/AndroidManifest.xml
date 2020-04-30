@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xuexiang.xui">
+
+    <application>
+        <activity
+            android:name=".widget.imageview.preview.ui.PreviewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".widget.imageview.preview.ui.VideoPlayerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+
+</manifest>

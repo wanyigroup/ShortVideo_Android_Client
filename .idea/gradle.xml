@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/antifake" />
+            <option value="$PROJECT_DIR$/apklist" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/citypicker" />
+            <option value="$PROJECT_DIR$/contract" />
+            <option value="$PROJECT_DIR$/dkplayer-java" />
+            <option value="$PROJECT_DIR$/dkplayer-ui" />
+            <option value="$PROJECT_DIR$/dkplayer-videocache" />
+            <option value="$PROJECT_DIR$/languagelib" />
+            <option value="$PROJECT_DIR$/location" />
+            <option value="$PROJECT_DIR$/xui_lib" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

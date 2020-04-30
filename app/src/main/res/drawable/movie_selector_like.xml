@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@mipmap/onlyback_movie_selected_love"></item>
+    <item android:state_selected="false" android:drawable="@mipmap/onlyback_movie_unselected_love"></item>
+
+</selector>

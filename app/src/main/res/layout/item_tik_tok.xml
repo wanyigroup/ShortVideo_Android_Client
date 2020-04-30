@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:id="@+id/thumb_image"
+            >
+        </ImageView>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/align_line"
+        >
+    </View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@id/align_line"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:id="@+id/center_line"
+        >
+    </View>
+
+
+    <com.like.LikeButton
+        android:id="@+id/btLikes"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        app:circle_end_color="@color/red1"
+        app:circle_start_color="@color/red1"
+        app:dots_primary_color="@color/red1"
+        app:dots_secondary_color="@color/red1"
+        app:icon_size="40dp"
+        app:icon_type="heart"
+        app:layout_constraintBottom_toBottomOf="@id/center_line"
+        app:layout_constraintTop_toTopOf="@id/center_line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:like_drawable="@mipmap/heart_red1"
+        app:liked="false"
+        app:unlike_drawable="@mipmap/heart_white">
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="5"
+            android:text="0"
+            android:textColor="@color/xui_config_color_white"
+            android:textSize="10sp" />
+    </com.like.LikeButton>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvComment"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@mipmap/comment"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLength="5"
+        android:text="0"
+        android:textColor="@color/xui_config_color_white"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/btLikes"
+        app:layout_constraintRight_toRightOf="@id/btLikes"
+        app:layout_constraintTop_toBottomOf="@id/btLikes" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/mp_download"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawableTop="@mipmap/mp_download"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLength="5"
+        android:textColor="@color/xui_config_color_white"
+        android:textSize="0sp"
+        app:layout_constraintLeft_toLeftOf="@id/btLikes"
+        app:layout_constraintRight_toRightOf="@id/btLikes"
+        app:layout_constraintTop_toBottomOf="@id/tvComment" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvReprinted"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawableTop="@mipmap/reprinted"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLength="5"
+        android:textColor="@color/xui_config_color_white"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/btLikes"
+        app:layout_constraintRight_toRightOf="@id/btLikes"
+        app:layout_constraintTop_toBottomOf="@id/mp_download" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25"
+        android:paddingBottom="@dimen/dkplayer_title_margin_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/ivHead"
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_52"
+            android:src="@mipmap/head"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:riv_border_color="@color/xui_config_color_white"
+            app:riv_border_width="2px"
+            app:riv_is_circle="true"
+            />
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/ivAttentionBg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivHead"
+            app:layout_constraintLeft_toLeftOf="@id/ivHead"
+            app:layout_constraintRight_toRightOf="@id/ivHead"
+            app:layout_constraintTop_toBottomOf="@id/ivHead"
+            app:riv_is_circle="true"
+            app:srcCompat="@color/xui_config_color_white"
+            />
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/ivAttention"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/add_red"
+            app:layout_constraintBottom_toBottomOf="@id/ivHead"
+            app:layout_constraintLeft_toLeftOf="@id/ivHead"
+            app:layout_constraintRight_toRightOf="@id/ivHead"
+            app:layout_constraintTop_toBottomOf="@id/ivHead"
+            app:riv_is_circle="true"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toTopOf="@+id/ivHead"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHead"
+            app:layout_constraintLeft_toRightOf="@id/ivHead"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:id="@+id/center_head"
+            >
+        </View>
+
+        <TextView
+            style="@style/TextStyle.Content"
+            android:textSize="@dimen/dp_15"
+            app:layout_constraintBottom_toBottomOf="@id/center_head"
+            app:layout_constraintLeft_toLeftOf="@id/center_head"
+            android:text="法拉利488"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:id="@+id/tv_author"
+            >
+        </TextView>
+
+        <TextView
+            style="@style/TextStyle.Content"
+            android:textSize="@dimen/dp_14"
+            app:layout_constraintTop_toBottomOf="@id/center_head"
+            app:layout_constraintLeft_toLeftOf="@id/center_head"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:gravity="left"
+            android:text="hi"
+            android:layout_marginTop="@dimen/dp_1"
+            android:id="@+id/tv_title"
+            >
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

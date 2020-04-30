@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.wanyi.uiframe.dkplayer.widget.ScaleImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="?attr/container_block_bgColor" />
+
+
+
+    <RelativeLayout
+        style="@style/Container"
+        app:layout_constraintBottom_toBottomOf="@id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:id="@+id/bottom_container"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+            <com.xuexiang.xui.widget.button.ButtonView
+                style="@style/SuperButton.Blue.Small"
+                android:drawableStart="@mipmap/icon_like"
+                android:id="@+id/video_rating"
+                android:text="1000"
+                >
+
+            </com.xuexiang.xui.widget.button.ButtonView>
+            <com.xuexiang.xui.widget.button.ButtonView
+                style="@style/SuperButton.Blue.Small"
+                android:drawableStart="@mipmap/ic_views"
+                android:id="@+id/video_views"
+                android:text="1000"
+                >
+
+            </com.xuexiang.xui.widget.button.ButtonView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Container"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="?attr/xui_config_size_content_text"
+        app:layout_constraintBottom_toTopOf="@id/bottom_container"
+        android:maxLines="2"
+        android:visibility="gone"
+        tools:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

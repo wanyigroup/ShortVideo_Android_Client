@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_40"
+         style="@style/Container.Login"
+        >
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            style="@style/input_edit"
+            android:hint="请输入您的手机号"
+            app:met_floatingLabelText="手机号"
+            android:id="@+id/input_phone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/input_edit"
+            android:hint="请输入您的验证码"
+            app:met_floatingLabelText="验证码"
+            app:met_maxCharacters="6"
+            android:inputType="number"
+            android:id="@+id/input_verify"
+            app:layout_constraintTop_toBottomOf="@id/input_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+        <com.xuexiang.xui.widget.button.CountDownButton
+            style="@style/TextStyle.Explain.Login"
+            android:id="@+id/bt_verify"
+            android:layout_marginRight="@dimen/dp_10"
+            app:layout_constraintRight_toRightOf="@id/input_verify"
+            app:layout_constraintTop_toTopOf="@id/input_verify"
+            app:layout_constraintBottom_toBottomOf="@id/input_verify"
+            android:text="获取验证码"
+            >
+
+        </com.xuexiang.xui.widget.button.CountDownButton>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/input_edit"
+            android:hint="请输入新密码(6-16位字符)"
+            android:inputType="textPassword"
+            app:met_floatingLabelText="新密码"
+            android:id="@+id/input_psw_new"
+            app:layout_constraintTop_toBottomOf="@id/input_verify"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+        </com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText>
+
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:layout_marginTop="@dimen/dp_30"
+            style="@style/CardButton.Large"
+            android:id="@+id/bt_reset_psw"
+            android:text="重置密码"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_psw_new"
+            >
+
+        </com.xuexiang.xui.widget.button.ButtonView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</LinearLayout>

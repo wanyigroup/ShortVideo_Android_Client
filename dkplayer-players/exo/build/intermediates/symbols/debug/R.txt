@@ -1,0 +1,15 @@
+int attr enableAudioFocus 0x7f040001
+int attr looping 0x7f040002
+int attr playerBackgroundColor 0x7f040003
+int attr screenScaleType 0x7f040004
+int id type_16_9 0x7f0b0001
+int id type_4_3 0x7f0b0002
+int id type_center_crop 0x7f0b0003
+int id type_default 0x7f0b0004
+int id type_match_parent 0x7f0b0005
+int id type_original 0x7f0b0006
+int[] styleable VideoView { 0x7f040001, 0x7f040002, 0x7f040003, 0x7f040004 }
+int styleable VideoView_enableAudioFocus 0
+int styleable VideoView_looping 1
+int styleable VideoView_playerBackgroundColor 2
+int styleable VideoView_screenScaleType 3

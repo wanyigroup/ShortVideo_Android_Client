@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+       />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        android:src="@mipmap/ic_movie_play"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:max="1000"
+        android:maxHeight="1dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:progressDrawable="@drawable/dkplayer_layer_progress_bar"
+        android:thumb="@drawable/dkplayer_seekbar_thumb"
+        android:thumbOffset="0dp" />
+
+
+</FrameLayout>

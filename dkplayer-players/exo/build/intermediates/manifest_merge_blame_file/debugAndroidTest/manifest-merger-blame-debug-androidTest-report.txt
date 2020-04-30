@@ -1,0 +1,40 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dueeeke.videoplayer.exo.test" >
+4
+5    <uses-sdk
+5-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:11:5-15:82
+10        android:name="android.test.InstrumentationTestRunner"
+10-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:11:22-75
+11        android:functionalTest="false"
+11-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:13:22-53
+13        android:label="Tests for com.dueeeke.videoplayer.exo.test"
+13-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:15:22-80
+14        android:targetPackage="com.dueeeke.videoplayer.exo.test" />
+14-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:12:22-78
+15
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.8] C:\Users\wanyi\.gradle\caches\transforms-2\files-2.1\b25a775e3dc1a383aece670c25be3f2b\jetified-exoplayer-core-2.10.8\AndroidManifest.xml:24:5-79
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.8] C:\Users\wanyi\.gradle\caches\transforms-2\files-2.1\b25a775e3dc1a383aece670c25be3f2b\jetified-exoplayer-core-2.10.8\AndroidManifest.xml:24:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\wanyi\.gradle\caches\transforms-2\files-2.1\42e4c5f41e996f27f1b27c73119c669f\rtmp-client-3.1.0\AndroidManifest.xml:11:5-67
+17-->[net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\wanyi\.gradle\caches\transforms-2\files-2.1\42e4c5f41e996f27f1b27c73119c669f\rtmp-client-3.1.0\AndroidManifest.xml:11:22-64
+18
+19    <application android:debuggable="true" >
+19-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:7:5-9:19
+19-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:7:18-43
+20        <uses-library android:name="android.test.runner" />
+20-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:8:9-60
+20-->D:\githubFrame\uiframe\dkplayer-players\exo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7289211343008944209.xml:8:23-57
+21    </application>
+22
+23</manifest>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textFieldStyle" format="reference" />
+
+    <attr name="xui_config_content_spacing_horizontal" format="dimension" /> <!-- margin 和 padding 等使用的内容通用水平间距 -->
+    <attr name="xui_config_content_spacing_vertical" format="dimension" /> <!-- margin 和 padding 等使用的内容通用垂直间距 -->
+    <attr name="xui_config_simple_list_item_height" format="dimension" />
+    <attr name="xui_config_simple_list_icon_size" format="dimension" />
+
+    <attr name="xui_switch_alpha_pressed" format="boolean" />
+    <attr name="xui_switch_alpha_disabled" format="boolean" />
+    <attr name="xui_alpha_pressed" format="float" />
+    <attr name="xui_alpha_disabled" format="float" />
+
+    <attr name="xui_general_shadow_elevation" format="dimension" />
+    <attr name="xui_general_shadow_alpha" format="float" />
+
+    <!--MaterialSearchView-->
+    <attr name="search_icon_padding" format="dimension" />
+    <attr name="search_view_text_padding" format="dimension" />
+    <attr name="search_view_text_size" format="dimension" />
+    <attr name="search_view_text_color" format="color" />
+    <attr name="search_view_text_color_hint" format="color" />
+    <attr name="search_view_ic_suggestion" format="reference" />
+    <attr name="search_view_layover_bg_color" format="color" />
+
+    <attr name="search_view_ic_back" format="reference" />
+    <attr name="search_view_ic_video" format="reference" />
+    <attr name="search_view_ic_clear" format="reference" />
+
+
+    <!--**********************************************
+    *                xui splash view               *
+    **********************************************-->
+    <!--启动页背景-->
+    <attr name="xui_config_color_splash_bg" format="reference" />
+    <!--启动页上的应用图标-->
+    <attr name="xui_config_splash_app_logo" format="reference" />
+    <!--启动页上应用图标距离下端的距离-->
+    <attr name="xui_config_app_logo_bottom" format="dimension" />
+    <!--启动页上公司的标志-->
+    <attr name="xui_config_splash_company_logo" format="reference" />
+    <!--启动页上公司的标志距离下端的距离-->
+    <attr name="xui_config_company_logo_bottom" format="dimension" />
+
+    <attr name="xui_guide_btn_padding_horizontal" format="dimension" />
+    <attr name="xui_guide_btn_padding_vertical" format="dimension" />
+    <attr name="xui_guide_btn_margin_bottom" format="dimension" />
+
+    <!--**********************************************
+    *                xui common color               *
+    **********************************************-->
+    <!--应用默认的背景颜色-->
+    <attr name="xui_config_color_background" format="color" />
+    <!-- 小的分割块使用浅色的分割线-->
+    <attr name="xui_config_color_separator_light" format="color" />
+    <!-- 大的分割块使用深色的分割线[像ListView、GridView之类]-->
+    <attr name="xui_config_color_separator_dark" format="color" />
+    <!--出错文字的颜色-->
+    <attr name="xui_config_color_error_text" format="color" />
+    <!--输入文字的颜色-->
+    <attr name="xui_config_color_input_text" format="color" />
+    <!--提示文字的颜色-->
+    <attr name="xui_config_color_hint_text" format="color" />
+    <!--应用边框的颜色-->
+    <attr name="xui_config_color_stroke" format="color" />
+    <!--应用不可点击的颜色-->
+    <attr name="xui_config_color_disable" format="color" />
+    <!--应用点击后的颜色-->
+    <attr name="xui_config_color_pressed" format="color" />
+
+    <!--**********************************************
+    *             xui list item bg                  *
+    **********************************************-->
+    <attr name="xui_config_divider_height" format="dimension" />
+    <attr name="xui_config_separator_height" format="dimension" />
+
+    <!--**********************************************
+    *              xui common list                  *
+    **********************************************-->
+
+    <attr name="xui_common_list_item_icon_margin_right" format="dimension" />
+    <attr name="xui_common_list_item_accessory_margin_left" format="dimension" />
+    <attr name="xui_common_list_item_title_v_text_size" format="dimension" />
+    <attr name="xui_common_list_item_title_h_text_size" format="dimension" />
+    <attr name="xui_common_list_item_h_space_min_width" format="dimension" />
+    <attr name="xui_common_list_item_detail_v_text_size" format="dimension" />
+    <attr name="xui_common_list_item_detail_h_text_size" format="dimension" />
+    <attr name="xui_common_list_item_detail_line_space" format="dimension" />
+
+    <attr name="xui_common_list_item_chevron" format="reference" />
+    <attr name="xui_common_list_item_switch" format="reference" />
+
+    <attr name="xui_list_item_bg_with_border_bottom" format="reference" />
+    <attr name="xui_list_item_bg_with_border_bottom_pressed" format="reference" />
+    <attr name="xui_list_item_bg_with_border_bottom_selector" format="reference" />
+    <attr name="xui_list_item_bg_with_border_double" format="reference" />
+    <attr name="xui_list_item_bg_with_border_double_pressed" format="reference" />
+    <attr name="xui_list_item_bg_with_border_double_selector" format="reference" />
+    <attr name="xui_list_item_bg_with_border_none_selector" format="reference" />
+    <attr name="xui_list_item_bg_with_border_top" format="reference" />
+    <attr name="xui_list_item_bg_with_border_top_pressed" format="reference" />
+    <attr name="xui_list_item_bg_with_border_top_selector" format="reference" />
+
+    <attr name="xui_list_item_height" format="dimension" />
+    <attr name="xui_list_item_height_higher" format="dimension" />
+    <!--**********************************************
+    *                  xui topbar                   *
+    ***********************************************-->
+    <!--标题栏的背景颜色-->
+    <attr name="xui_actionbar_color" format="color" />
+    <!--标题栏的背景图片，优先使用背景图片，没有背景图片才使用背景颜色，可选-->
+    <attr name="xui_actionbar_background" format="reference" />
+    <!--标题栏文字的颜色-->
+    <attr name="xui_actionbar_text_color" format="color" />
+    <!--是否支持沉浸式标题栏-->
+    <attr name="xui_actionbar_immersive" format="boolean" />
+    <!--标题栏返回箭头-->
+    <attr name="xui_actionbar_ic_navigation_back" format="reference" />
+
+    <!--标题栏的高度-->
+    <attr name="xui_actionbar_height" format="dimension" />
+    <!--标题栏标题文字的大小-->
+    <attr name="xui_actionbar_title_text_size" format="dimension" />
+    <!--标题栏副标题文字的大小-->
+    <attr name="xui_actionbar_sub_text_size" format="dimension" />
+    <!--标题栏动作文字的大小-->
+    <attr name="xui_actionbar_action_text_size" format="dimension" />
+    <!--标题栏动作图片的padding-->
+    <attr name="xui_actionbar_action_padding" format="dimension" />
+    <!--标题栏两侧文字的padding-->
+    <attr name="xui_actionbar_side_text_padding" format="dimension" />
+
+    <!--**********************************************
+    *                  xui btn                      *
+    **********************************************-->
+    <!-- android 5.0以下不能再selector中用?attr,必须要整个drawable由使用者提供 -->
+    <attr name="xui_round_btn_bg_color" format="color" />
+    <attr name="xui_round_btn_border_color" format="color" />
+    <attr name="xui_round_btn_text_color" format="color" />
+
+    <attr name="xui_btn_view_radius" format="dimension" />
+    <attr name="xui_btn_view_width" format="dimension" />
+    <attr name="xui_btn_view_height" format="dimension" />
+    <attr name="xui_btn_view_text_size" format="dimension" />
+    <attr name="xui_btn_view_border_width" format="dimension" />
+    <attr name="xui_btn_view_disable_color" format="color" />
+
+    <attr name="xui_config_icon_drawable_padding" format="dimension" />
+
+    <!--**********************************************
+    *                  xui text size                *
+    ***********************************************-->
+    <!--普通文字-->
+    <!--标题文字大小-->
+    <attr name="xui_config_size_title_text" format="dimension" />
+    <!--正文内容文字大小-->
+    <attr name="xui_config_size_content_text" format="dimension" />
+    <!--辅助说明文字大小-->
+    <attr name="xui_config_size_explain_text" format="dimension" />
+
+    <attr name="xui_config_color_title_text" format="color" />
+    <attr name="xui_config_color_content_text" format="color" />
+    <attr name="xui_config_color_explain_text" format="color" />
+
+    <!--输入框文字-->
+    <attr name="xui_config_size_edittext_input_text" format="dimension" />
+    <attr name="xui_config_size_edittext_helper_text" format="dimension" />
+    <attr name="xui_config_size_edittext_components_spacing" format="dimension" />
+    <attr name="xui_config_size_edittext_left_padding" format="dimension" />
+    <attr name="xui_config_size_edittext_radius" format="dimension" />
+    <attr name="xui_config_size_edittext_height" format="dimension" />
+
+    <!--**********************************************
+    *                  xui popup                    *
+    ***********************************************-->
+    <attr name="xui_popup_bg" format="reference" />
+    <attr name="xui_popup_arrow_down" format="reference" />
+    <attr name="xui_popup_arrow_up" format="reference" />
+    <attr name="xui_popup_arrow_up_margin_top" format="dimension" /> <!-- 一般与xui_popup_bg上阴影相等 -->
+    <attr name="xui_popup_arrow_down_margin_bottom" format="dimension" /> <!-- 一般与xui_popup_bg下阴影相等 -->
+
+    <attr name="xui_popup_width" format="dimension" />
+
+    <attr name="xui_tip_popup_padding_top" format="dimension" />
+    <attr name="xui_tip_popup_padding_left" format="dimension" />
+
+    <!--**********************************************
+    *                 StatefulLayout                 *
+    ***********************************************-->
+    <attr name="stf_progressbar_size" format="dimension" />
+    <attr name="stf_tip_img_size" format="dimension" />
+
+    <!--**********************************************
+    *                 Spinner                        *
+    ***********************************************-->
+    <attr name="xui_config_size_spinner_text" format="dimension" />
+
+    <attr name="ms_padding_left_size" format="dimension" />
+    <attr name="ms_padding_top_size" format="dimension" />
+    <attr name="ms_item_height_size" format="dimension" />
+
+    <attr name="ms_dropdown_offset" format="dimension" />
+    <attr name="ms_arrow_size" format="dimension" />
+
+    <!--**********************************************
+    *                 Dialog /Loading                *
+    ***********************************************-->
+    <attr name="xui_dialog_radius_size" format="dimension" />
+    <attr name="xui_dialog_background_dim_amount" format="float" />
+
+    <attr name="xui_dialog_loading_padding_size" format="dimension" />
+    <attr name="xui_dialog_loading_min_size" format="dimension" />
+
+    <attr name="xui_dialog_mini_loading_padding_size" format="dimension" />
+    <attr name="xui_dialog_mini_loading_min_size" format="dimension" />
+    <attr name="xui_mini_loading_margin_size" format="dimension" />
+    <attr name="xui_mini_loading_view_size" format="dimension" />
+
+    <attr name="xui_loading_text_size" format="dimension" />
+    <attr name="xui_loading_view_size" format="dimension" />
+    <attr name="xui_loading_view_width" format="dimension" />
+    <attr name="xui_loading_margin_size" format="dimension" />
+
+    <attr name="mini_loading_view_size" format="dimension" />
+
+    <!--**********************************************
+    *              xui bottom sheet                 *
+    **********************************************-->
+
+    <attr name="xui_bottom_sheet_title_style" format="reference" />
+    <attr name="xui_bottom_sheet_title_height" format="dimension" />
+    <attr name="xui_bottom_sheet_title_appearance" format="reference" />
+    <attr name="xui_bottom_sheet_title_bg" format="reference" />
+
+    <attr name="xui_bottom_sheet_list_item_padding_horizontal" format="dimension" />
+    <attr name="xui_bottom_sheet_list_item_height" format="dimension" />
+    <attr name="xui_bottom_sheet_list_item_mark_margin_left" format="dimension" />
+    <attr name="xui_bottom_sheet_list_item_tip_point_margin_left" format="dimension" />
+
+    <attr name="xui_bottom_sheet_list_item_text_style" format="reference" />
+    <attr name="xui_bottom_sheet_list_item_text_appearance" format="reference" />
+
+    <attr name="xui_bottom_sheet_list_item_bg" format="reference" />
+    <attr name="xui_bottom_sheet_list_item_icon_size" format="dimension" />
+    <attr name="xui_bottom_sheet_list_item_icon_margin_right" format="dimension" />
+
+    <attr name="xui_bottom_sheet_grid_padding_vertical" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_line_padding_horizontal" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_line_vertical_space" format="dimension" />
+
+    <attr name="xui_bottom_sheet_grid_item_mini_width" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_paddingTop" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_paddingBottom" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_icon_size" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_icon_marginTop" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_icon_marginBottom" format="dimension" />
+    <attr name="xui_bottom_sheet_grid_item_text_appearance" format="reference" />
+
+    <attr name="xui_bottom_sheet_button_height" format="dimension" />
+    <attr name="xui_bottom_sheet_button_text_size" format="dimension" />
+    <attr name="xui_bottom_sheet_button_text_color" format="reference" />
+    <attr name="xui_bottom_sheet_button_background" format="reference" />
+
+    <!--**********************************************
+    *                  xui tabSegment              *
+    ***********************************************-->
+    <attr name="xui_tab_sign_count_view" format="reference" />
+    <attr name="xui_tab_sign_count_view_minSize" format="dimension" />
+    <attr name="xui_tab_sign_count_view_minSize_with_text" format="dimension" />
+    <attr name="xui_tab_sign_count_view_bg" format="reference" />
+    <attr name="xui_tab_sign_count_view_padding_horizontal" format="dimension" />
+
+    <!--**********************************************
+    *             xui drawable                      *
+    **********************************************-->
+    <attr name="xui_icon_check_mark" format="reference" />
+    <attr name="xui_icon_checkbox" format="reference" />
+
+</resources>
