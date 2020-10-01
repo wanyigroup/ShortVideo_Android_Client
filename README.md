@@ -26,6 +26,37 @@
 
 ### 问题反馈
  - 如果有功能或者BUG请提交 issues
+ 
+ ## Docs (English)
+ 
+ # Short Video APP, Android client source code, ShortVideo Android Client
+
+Keywords: short video app, open source short video app, imitating vibrato, imitating fast hand app, ShortVideo Android Client
+
+This is a short video APP product, the code is open source, only for learning, `prohibited commercial use`!
+
+### Associated Warehouse
+ -[Short Video APP Web Backend] (https://github.com/wanyiinc/ShortVideo_Backed)
+ -[Short Video APP Android Client] (https://github.com/wanyiinc/ShortVideo_Android_Client)
+
+### Compiler Environment
+    -android studio 3.5+
+    -jdk 1.8
+    -ndk 18+
+
+### The main function
+    -User Center supports registration and login of username/email/SMS verification code
+    -Content center video background add/import transcoding, publishing function
+    -VIP function VIP video content can be set in the background
+    -Charge function Call the external H5 page to realize recharge/consumption/exchange VIP
+
+### Application Preview
+| Picture 1 | Picture 2 | Picture 3 | Picture 4 |
+| ------ | ------ | ------ | ------ |
+| ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/ blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
+
+### feedback
+ -If there are features or bugs, please submit issues
 
 
 
