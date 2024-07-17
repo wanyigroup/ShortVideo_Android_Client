@@ -5,8 +5,8 @@
 这个是一款短视频APP产品,代码开源,仅供学习,`禁止商用`!
 
 ### 关联仓库
- - [短视频APP Web后端] (https://github.com/wanyiinc/ShortVideo_Backed)
- - [短视频APP 安卓客户端] (https://github.com/wanyiinc/ShortVideo_Android_Client)
+ - [短视频APP Web后端] (https://github.com/wanyigroup/ShortVideo_Backed)
+ - [短视频APP 安卓客户端] (https://github.com/wanyigroup/ShortVideo_Android_Client)
 
 ### 编译环境
     - android studio 3.5+
@@ -22,7 +22,7 @@
 ###  应用预览
 | 图片1 | 图片2 | 图片3 | 图片4 |
 | ------ | ------ | ------ | ------ |
-| ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
+| ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
 
 ### 问题反馈
  - 如果有功能或者BUG请提交 issues
@@ -36,8 +36,8 @@ Keywords: short video app, open source short video app, imitating vibrato, imita
 This is a short video APP product, the code is open source, only for learning, `prohibited commercial use`!
 
 ### Associated Warehouse
- -[Short Video APP Web Backend] (https://github.com/wanyiinc/ShortVideo_Backed)
- -[Short Video APP Android Client] (https://github.com/wanyiinc/ShortVideo_Android_Client)
+ -[Short Video APP Web Backend] (https://github.com/wanyigroup/ShortVideo_Backed)
+ -[Short Video APP Android Client] (https://github.com/wanyigroup/ShortVideo_Android_Client)
 
 ### Compiler Environment
     -android studio 3.5+
@@ -53,7 +53,7 @@ This is a short video APP product, the code is open source, only for learning, `
 ### Application Preview
 | Picture 1 | Picture 2 | Picture 3 | Picture 4 |
 | ------ | ------ | ------ | ------ |
-| ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/ blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyiinc/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
+| ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/ blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
 
 ### feedback
  -If there are features or bugs, please submit issues
