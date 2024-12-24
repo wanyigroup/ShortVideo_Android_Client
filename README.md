@@ -53,7 +53,7 @@ This is a short video APP product, the code is open source, only for learning, `
 ### Application Preview
 | Picture 1 | Picture 2 | Picture 3 | Picture 4 |
 | ------ | ------ | ------ | ------ |
-| ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/ blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
+| ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app1.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app2.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app3.jpg?raw=true) | ![](https://github.com/wanyigroup/ShortVideo_Android_Client/blob/master/readme/img/app4.jpg?raw=true) |
 
 ### feedback
  -If there are features or bugs, please submit issues
